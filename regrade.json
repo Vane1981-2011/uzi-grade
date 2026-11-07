@@ -1,0 +1,4278 @@
+{
+  "schema": "uzi-grade/regrade/1",
+  "summary": {
+    "requested": 91,
+    "graded": 91,
+    "missing": [],
+    "levels": {
+      "L0": 17,
+      "L1": 54,
+      "L2": 20,
+      "L3": 0,
+      "L4": 0,
+      "L5": 0
+    },
+    "gold_before": 40,
+    "levels_before_gold": 74,
+    "thresholds": {
+      "by_tier": {
+        "exec": {
+          "p50": 50.0,
+          "p75": 50.0,
+          "n": 5
+        },
+        "prose": {
+          "p50": 50.0,
+          "p75": 66.67,
+          "n": 33
+        }
+      },
+      "source": "calibration.json tiers.<exec|prose>.score"
+    },
+    "behaviour": {
+      "executed": 0,
+      "records": 60,
+      "note": "B1-B3 行为评测本轮未执行，Top20 仅记录 unverifiable 及缺失项"
+    },
+    "top20": {
+      "count": 20,
+      "met": 7,
+      "unmet": [
+        "industry-analysis-assistant",
+        "expert-mode-tool",
+        "product-design-analyzer",
+        "ab-test-analysis",
+        "canvas-strategy",
+        "cohort-analysis",
+        "enterprise-benchmarking",
+        "financial-analysis-pipeline",
+        "financial-data-access",
+        "internal-control-assessment",
+        "investment-risk-engine",
+        "maturity-model-assessment",
+        "prioritization"
+      ]
+    },
+    "others": {
+      "count": 71,
+      "met": 13,
+      "unmet": [
+        "capability-extension",
+        "comic-layout-engine",
+        "design-taste-frontend",
+        "dev-value-gate",
+        "directory-picker",
+        "dual-agent-orchestration",
+        "finance-operations-suite",
+        "financial-modeling",
+        "image-to-code",
+        "imagegen-frontend",
+        "mcp-cli-auto-init",
+        "media-pipeline-guard",
+        "obsidian-kb-guard",
+        "pipeline-governance",
+        "security-pentest",
+        "self-learning-engine",
+        "self-upgrade",
+        "skill-ecosystem",
+        "stock-financial-report",
+        "unified-expert-panel",
+        "vane-workbench-dev",
+        "video-production-suite",
+        "vision-proxy",
+        "creative-origin-engine",
+        "financial-bp-analysis",
+        "liurun-perspective",
+        "methodology-decision",
+        "nuwa-skill",
+        "sentiment-analysis",
+        "unified-inspiration",
+        "unified-risk-engine",
+        "weread-skills",
+        "audit-analyst-cross-validation",
+        "cost-benefit-analysis",
+        "data-report-builder",
+        "management-advisory",
+        "privacy-policy",
+        "shiyanwen-financial-advisor",
+        "sp-replacement-eval",
+        "supply-chain-collaboration",
+        "tax-risk-indicators",
+        "construction-reconciliation",
+        "customer-journey-map",
+        "literary-quality-standards",
+        "liurun-fengtang-advisor",
+        "market-competitive-intelligence",
+        "product-ideation",
+        "story-writing",
+        "unified-strategy",
+        "user-personas",
+        "anti-ai-writing",
+        "cangjie-skill",
+        "cinematic-video-generator",
+        "novel-serial-writing",
+        "remotion-best-practices",
+        "response-craftsmanship",
+        "series-history-writing",
+        "unified-storyboard"
+      ]
+    }
+  },
+  "skills": [
+    {
+      "name": "capability-extension",
+      "slug": "capability-extension",
+      "path_display": "<skill-corpus-1>/capability-extension",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "pass",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "fail"
+      },
+      "failed_checks": [
+        "M7",
+        "M8"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M7,M8; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "b3536c868cf6224066213310ea7c6b7b955a60563d6e33777d49c65700bd0284",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/capability-extension",
+        "exit_code": 1,
+        "output_sha256": "b3536c868cf6224066213310ea7c6b7b955a60563d6e33777d49c65700bd0284"
+      }
+    },
+    {
+      "name": "comic-layout-engine",
+      "slug": "comic-layout-engine",
+      "path_display": "<skill-corpus-1>/comic-layout-engine",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "32bc9677df7679b4361e062de7e0667140132c7c501dc564ddd8516236899571",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/comic-layout-engine",
+        "exit_code": 1,
+        "output_sha256": "32bc9677df7679b4361e062de7e0667140132c7c501dc564ddd8516236899571"
+      }
+    },
+    {
+      "name": "D2L拆解学习协议",
+      "slug": "decompose-to-learn",
+      "path_display": "<skill-corpus-1>/decompose-to-learn",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L2",
+      "score": 83.33,
+      "passed": 5,
+      "applicable": 6,
+      "before": {
+        "score": 11.25,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "pass",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（11.25/11.5），UZI v2 由工具签出 L2; 未通过/无证据: M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "e26c12740e4774d0e04437f0f23fcf0eafda2d69122eb3cafc4dec2e2b58dc35",
+      "behaviour": [
+        {
+          "check_id": "B1",
+          "title": "golden task 端到端执行与判分",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B1 ./decompose-to-learn",
+          "exit_code": 2,
+          "output_sha256": "7081f3543866fc3321fbbe93c832eacfeb68bba883fd0b44255f7a84c42f8984",
+          "missing": "未执行 B1：缺 golden task 执行环境、模型调用记录与判分结果"
+        },
+        {
+          "check_id": "B2",
+          "title": "越界请求实际拒答/降级",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B2 ./decompose-to-learn",
+          "exit_code": 2,
+          "output_sha256": "53882aca590dc735cbcec832de019cd09f1b01e926207f6c7b68880f921c2c76",
+          "missing": "未执行 B2：本轮未向模型发送 3 条越界请求，无拒答录像"
+        },
+        {
+          "check_id": "B3",
+          "title": "同任务 3 次采样稳定性",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B3 ./decompose-to-learn",
+          "exit_code": 2,
+          "output_sha256": "01d15e694900819f6b8a0039d30de1902dfdfa78bf63c1ce9c74522f5748698a",
+          "missing": "未执行 B3：缺 3 次重复采样的通过率记录"
+        }
+      ],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/decompose-to-learn",
+        "exit_code": 1,
+        "output_sha256": "e26c12740e4774d0e04437f0f23fcf0eafda2d69122eb3cafc4dec2e2b58dc35"
+      }
+    },
+    {
+      "name": "前端设计美学",
+      "slug": "design-taste-frontend",
+      "path_display": "<skill-corpus-1>/design-taste-frontend",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": 10.0,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "pass",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "fail"
+      },
+      "failed_checks": [
+        "M7",
+        "M8"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（10.0/11.5），UZI v2 由工具签出 L1; 未通过/无证据: M7,M8; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "47decacc14be62813a29ff7a8673a76dca2ced2c0832b9b19fea75de0a992adb",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/design-taste-frontend",
+        "exit_code": 1,
+        "output_sha256": "47decacc14be62813a29ff7a8673a76dca2ced2c0832b9b19fea75de0a992adb"
+      }
+    },
+    {
+      "name": "dev-value-gate",
+      "slug": "dev-value-gate",
+      "path_display": "<skill-corpus-1>/dev-value-gate",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 50.0,
+      "passed": 3,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "fail"
+      },
+      "failed_checks": [
+        "M3",
+        "M7",
+        "M8"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M3,M7,M8; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "44c9e8499268677e0c5ec8f55db1735b9154f8ba7607432cd8a19633046a2131",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/dev-value-gate",
+        "exit_code": 1,
+        "output_sha256": "44c9e8499268677e0c5ec8f55db1735b9154f8ba7607432cd8a19633046a2131"
+      }
+    },
+    {
+      "name": "directory-picker",
+      "slug": "directory-picker",
+      "path_display": "<skill-corpus-1>/directory-picker",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "0b4e793171e88321bcd67f4cb992a5ddbfea0442edaf0cb13b5090dbe491d4a5",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/directory-picker",
+        "exit_code": 1,
+        "output_sha256": "0b4e793171e88321bcd67f4cb992a5ddbfea0442edaf0cb13b5090dbe491d4a5"
+      }
+    },
+    {
+      "name": "dual-agent-orchestration",
+      "slug": "dual-agent-orchestration",
+      "path_display": "<skill-corpus-1>/dual-agent-orchestration",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "860736ecac23601265342654436b883f68a34e9035af33b877d18857d32117a9",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/dual-agent-orchestration",
+        "exit_code": 1,
+        "output_sha256": "860736ecac23601265342654436b883f68a34e9035af33b877d18857d32117a9"
+      }
+    },
+    {
+      "name": "expert-mode-tool",
+      "slug": "expert-mode-tool",
+      "path_display": "<skill-corpus-1>/expert-mode-tool",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L0",
+      "score": 33.33,
+      "passed": 2,
+      "applicable": 6,
+      "before": {
+        "score": 10.75,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "fail",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "fail"
+      },
+      "failed_checks": [
+        "M1",
+        "M3",
+        "M7",
+        "M8"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（10.75/11.5），UZI v2 由工具签出 L0; 未通过/无证据: M1,M3,M7,M8; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "ab90d7e2d868c7d17f50a7a941fb56db9ad017c5c8f2ba5c3ca38707c2334631",
+      "behaviour": [
+        {
+          "check_id": "B1",
+          "title": "golden task 端到端执行与判分",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B1 ./expert-mode-tool",
+          "exit_code": 2,
+          "output_sha256": "7081f3543866fc3321fbbe93c832eacfeb68bba883fd0b44255f7a84c42f8984",
+          "missing": "未执行 B1：缺 golden task 执行环境、模型调用记录与判分结果"
+        },
+        {
+          "check_id": "B2",
+          "title": "越界请求实际拒答/降级",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B2 ./expert-mode-tool",
+          "exit_code": 2,
+          "output_sha256": "53882aca590dc735cbcec832de019cd09f1b01e926207f6c7b68880f921c2c76",
+          "missing": "未执行 B2：本轮未向模型发送 3 条越界请求，无拒答录像"
+        },
+        {
+          "check_id": "B3",
+          "title": "同任务 3 次采样稳定性",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B3 ./expert-mode-tool",
+          "exit_code": 2,
+          "output_sha256": "01d15e694900819f6b8a0039d30de1902dfdfa78bf63c1ce9c74522f5748698a",
+          "missing": "未执行 B3：缺 3 次重复采样的通过率记录"
+        }
+      ],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/expert-mode-tool",
+        "exit_code": 1,
+        "output_sha256": "ab90d7e2d868c7d17f50a7a941fb56db9ad017c5c8f2ba5c3ca38707c2334631"
+      }
+    },
+    {
+      "name": "finance-operations-suite",
+      "slug": "finance-operations-suite",
+      "path_display": "<skill-corpus-1>/finance-operations-suite",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L0",
+      "score": 50.0,
+      "passed": 3,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "fail",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M2",
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M2,M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "663ae11cdb4e701564e8c13c6535221ab7dd3a0e29e76ccd6fe61c25baf9758a",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/finance-operations-suite",
+        "exit_code": 1,
+        "output_sha256": "663ae11cdb4e701564e8c13c6535221ab7dd3a0e29e76ccd6fe61c25baf9758a"
+      }
+    },
+    {
+      "name": "financial-analysis-pipeline",
+      "slug": "financial-analysis-pipeline",
+      "path_display": "<skill-corpus-1>/financial-analysis-pipeline",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": 10.5,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（10.5/11.5），UZI v2 由工具签出 L1; 未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "4ede28c90a12a3a1d834f89f9fda69c5c25d10b13fc73d1afba7cd92fda2590d",
+      "behaviour": [
+        {
+          "check_id": "B1",
+          "title": "golden task 端到端执行与判分",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B1 ./financial-analysis-pipeline",
+          "exit_code": 2,
+          "output_sha256": "7081f3543866fc3321fbbe93c832eacfeb68bba883fd0b44255f7a84c42f8984",
+          "missing": "未执行 B1：缺 golden task 执行环境、模型调用记录与判分结果"
+        },
+        {
+          "check_id": "B2",
+          "title": "越界请求实际拒答/降级",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B2 ./financial-analysis-pipeline",
+          "exit_code": 2,
+          "output_sha256": "53882aca590dc735cbcec832de019cd09f1b01e926207f6c7b68880f921c2c76",
+          "missing": "未执行 B2：本轮未向模型发送 3 条越界请求，无拒答录像"
+        },
+        {
+          "check_id": "B3",
+          "title": "同任务 3 次采样稳定性",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B3 ./financial-analysis-pipeline",
+          "exit_code": 2,
+          "output_sha256": "01d15e694900819f6b8a0039d30de1902dfdfa78bf63c1ce9c74522f5748698a",
+          "missing": "未执行 B3：缺 3 次重复采样的通过率记录"
+        }
+      ],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/financial-analysis-pipeline",
+        "exit_code": 1,
+        "output_sha256": "4ede28c90a12a3a1d834f89f9fda69c5c25d10b13fc73d1afba7cd92fda2590d"
+      }
+    },
+    {
+      "name": "financial-modeling",
+      "slug": "financial-modeling",
+      "path_display": "<skill-corpus-1>/financial-modeling",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "3c32fec0511bafc4bc470aa30432abb8db7d05b090537f013a3af3d90c6a6411",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/financial-modeling",
+        "exit_code": 1,
+        "output_sha256": "3c32fec0511bafc4bc470aa30432abb8db7d05b090537f013a3af3d90c6a6411"
+      }
+    },
+    {
+      "name": "governance-guard",
+      "slug": "governance-guard",
+      "path_display": "<skill-corpus-1>/governance-guard",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L2",
+      "score": 83.33,
+      "passed": 5,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "pass",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "308bccb5cab61ca0bb7c1a3071a42285084f41623f0da185e09b7feeb8c047f2",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/governance-guard",
+        "exit_code": 1,
+        "output_sha256": "308bccb5cab61ca0bb7c1a3071a42285084f41623f0da185e09b7feeb8c047f2"
+      }
+    },
+    {
+      "name": "图片转代码",
+      "slug": "image-to-code",
+      "path_display": "<skill-corpus-1>/image-to-code",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L0",
+      "score": 50.0,
+      "passed": 3,
+      "applicable": 6,
+      "before": {
+        "score": 9.5,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "fail",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M1",
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（9.5/11.5），UZI v2 由工具签出 L0; 未通过/无证据: M1,M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "9d218590e2b1a0240f32263090a5553c50e5fd810535a3c2f2b9445813ed67e4",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/image-to-code",
+        "exit_code": 1,
+        "output_sha256": "9d218590e2b1a0240f32263090a5553c50e5fd810535a3c2f2b9445813ed67e4"
+      }
+    },
+    {
+      "name": "图片生成前端",
+      "slug": "imagegen-frontend",
+      "path_display": "<skill-corpus-1>/imagegen-frontend",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": 9.5,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（9.5/11.5），UZI v2 由工具签出 L1; 未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "1e793d0fffba0a3879be31584edbf6cde532a90b6ef9b253063bc14916824071",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/imagegen-frontend",
+        "exit_code": 1,
+        "output_sha256": "1e793d0fffba0a3879be31584edbf6cde532a90b6ef9b253063bc14916824071"
+      }
+    },
+    {
+      "name": "mcp-cli-auto-init",
+      "slug": "mcp-cli-auto-init",
+      "path_display": "<skill-corpus-1>/mcp-cli-auto-init",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "f0a24dc386c5bc6b4b2f8d4ba7c78ac1f8a5d19c03b87a1e7d0b5c54a047299a",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/mcp-cli-auto-init",
+        "exit_code": 1,
+        "output_sha256": "f0a24dc386c5bc6b4b2f8d4ba7c78ac1f8a5d19c03b87a1e7d0b5c54a047299a"
+      }
+    },
+    {
+      "name": "media-pipeline-guard",
+      "slug": "media-pipeline-guard",
+      "path_display": "<skill-corpus-1>/media-pipeline-guard",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "6cbc9681ae3e96bb1a242d87da57379b82c7fe1d8853416eeebd8c57e406c079",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/media-pipeline-guard",
+        "exit_code": 1,
+        "output_sha256": "6cbc9681ae3e96bb1a242d87da57379b82c7fe1d8853416eeebd8c57e406c079"
+      }
+    },
+    {
+      "name": "obsidian-kb-guard",
+      "slug": "obsidian-kb-guard",
+      "path_display": "<skill-corpus-1>/obsidian-kb-guard",
+      "alias_of": null,
+      "tier": "exec",
+      "level": "L1",
+      "score": 62.5,
+      "passed": 5,
+      "applicable": 8,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "pass",
+        "M4": "pass",
+        "M5": "fail",
+        "M6": "unverifiable",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M5",
+        "M6",
+        "M7"
+      ],
+      "unverifiable": {
+        "M6": "tests/expected.json（含 argv 与期望 stdout 的 sha256）"
+      },
+      "downgrade_reason": "未通过/无证据: M5,M6,M7",
+      "digest": "e9fe09c48e4e2b0da5c6960abe588ed7f4ec531c5ef2482df35d44656fdf6bb1",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/obsidian-kb-guard",
+        "exit_code": 1,
+        "output_sha256": "e9fe09c48e4e2b0da5c6960abe588ed7f4ec531c5ef2482df35d44656fdf6bb1"
+      }
+    },
+    {
+      "name": "picture-book-creator",
+      "slug": "picture-book-creator",
+      "path_display": "<skill-corpus-1>/picture-book-creator",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L2",
+      "score": 83.33,
+      "passed": 5,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "pass",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "6e1eecbd5a3cf5425f42b38e5aa46bcecf4e33d9e4aa215f6c174bea0dc4f15e",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/picture-book-creator",
+        "exit_code": 1,
+        "output_sha256": "6e1eecbd5a3cf5425f42b38e5aa46bcecf4e33d9e4aa215f6c174bea0dc4f15e"
+      }
+    },
+    {
+      "name": "pipeline-governance",
+      "slug": "pipeline-governance",
+      "path_display": "<skill-corpus-1>/pipeline-governance",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L0",
+      "score": 50.0,
+      "passed": 3,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "fail",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M2",
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M2,M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "0a4adc4e50944f72fe559b5d9b981afa46fd4b815c66e8eece929cd29df6ef4f",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/pipeline-governance",
+        "exit_code": 1,
+        "output_sha256": "0a4adc4e50944f72fe559b5d9b981afa46fd4b815c66e8eece929cd29df6ef4f"
+      }
+    },
+    {
+      "name": "security-pentest",
+      "slug": "security-pentest",
+      "path_display": "<skill-corpus-1>/security-pentest",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 50.0,
+      "passed": 3,
+      "applicable": 6,
+      "before": {
+        "score": 10.5,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "fail"
+      },
+      "failed_checks": [
+        "M3",
+        "M7",
+        "M8"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（10.5/11.5），UZI v2 由工具签出 L1; 未通过/无证据: M3,M7,M8; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "97acffab534cea1f4dea569e6171603a90d9de9a2b2273b42c5455232d0d6a14",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/security-pentest",
+        "exit_code": 1,
+        "output_sha256": "97acffab534cea1f4dea569e6171603a90d9de9a2b2273b42c5455232d0d6a14"
+      }
+    },
+    {
+      "name": "self-learning-engine",
+      "slug": "self-learning-engine",
+      "path_display": "<skill-corpus-1>/capability-extension",
+      "alias_of": "capability-extension",
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "pass",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "fail"
+      },
+      "failed_checks": [
+        "M7",
+        "M8"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M7,M8; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "b3536c868cf6224066213310ea7c6b7b955a60563d6e33777d49c65700bd0284",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/self-learning-engine",
+        "exit_code": 1,
+        "output_sha256": "b3536c868cf6224066213310ea7c6b7b955a60563d6e33777d49c65700bd0284"
+      }
+    },
+    {
+      "name": "self-upgrade",
+      "slug": "self-upgrade",
+      "path_display": "<skill-corpus-2>/self-upgrade",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L0",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "fail",
+        "M3": "pass",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M2",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M2,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "1afedbe0b4a6f7e40974495a6f1bb13b16f66015eb18116503abf25bfd3d0bba",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/self-upgrade",
+        "exit_code": 1,
+        "output_sha256": "1afedbe0b4a6f7e40974495a6f1bb13b16f66015eb18116503abf25bfd3d0bba"
+      }
+    },
+    {
+      "name": "技能生态系统",
+      "slug": "skill-ecosystem",
+      "path_display": "<skill-corpus-1>/skill-ecosystem",
+      "alias_of": null,
+      "tier": "exec",
+      "level": "L1",
+      "score": 50.0,
+      "passed": 4,
+      "applicable": 8,
+      "before": {
+        "score": 9.75,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "pass",
+        "M4": "fail",
+        "M5": "fail",
+        "M6": "unverifiable",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M4",
+        "M5",
+        "M6",
+        "M7"
+      ],
+      "unverifiable": {
+        "M6": "tests/expected.json（含 argv 与期望 stdout 的 sha256）"
+      },
+      "downgrade_reason": "旧体系标 GOLD（9.75/11.5），UZI v2 由工具签出 L1; 未通过/无证据: M4,M5,M6,M7",
+      "digest": "43750daac8602e496f5af8699207b0537900083736734089535e882da552ec85",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/skill-ecosystem",
+        "exit_code": 1,
+        "output_sha256": "43750daac8602e496f5af8699207b0537900083736734089535e882da552ec85"
+      }
+    },
+    {
+      "name": "stock-financial-report",
+      "slug": "stock-financial-report",
+      "path_display": "<skill-corpus-1>/stock-financial-report",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "pass",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "fail"
+      },
+      "failed_checks": [
+        "M7",
+        "M8"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M7,M8; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "3093f99a8fbe3de87da5e8af2a42fececb51f1f1dde7c18dcbefec7506605041",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/stock-financial-report",
+        "exit_code": 1,
+        "output_sha256": "3093f99a8fbe3de87da5e8af2a42fececb51f1f1dde7c18dcbefec7506605041"
+      }
+    },
+    {
+      "name": "代码库理解",
+      "slug": "understand",
+      "path_display": "<skill-corpus-1>/understand",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L2",
+      "score": 83.33,
+      "passed": 5,
+      "applicable": 6,
+      "before": {
+        "score": 10.5,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "pass",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（10.5/11.5），UZI v2 由工具签出 L2; 未通过/无证据: M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "d754f52c85b896cae5e0dc7514dfbab708355e32590b01bb1edc0e93c6713efb",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/understand",
+        "exit_code": 1,
+        "output_sha256": "d754f52c85b896cae5e0dc7514dfbab708355e32590b01bb1edc0e93c6713efb"
+      }
+    },
+    {
+      "name": "unified-expert-panel",
+      "slug": "unified-expert-panel",
+      "path_display": "<skill-corpus-1>/unified-expert-panel",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L0",
+      "score": 50.0,
+      "passed": 3,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "fail",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M1",
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M1,M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "5a6698900e5eb81b5c651003127c3328b27d484031297bc595953230da40e5ec",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/unified-expert-panel",
+        "exit_code": 1,
+        "output_sha256": "5a6698900e5eb81b5c651003127c3328b27d484031297bc595953230da40e5ec"
+      }
+    },
+    {
+      "name": "vane-workbench-dev",
+      "slug": "vane-workbench-dev",
+      "path_display": "<skill-corpus-1>/vane-workbench-dev",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "bf5b40da5d87e98e4c014213351f738e362a4efd6d947addb7214be16934f640",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/vane-workbench-dev",
+        "exit_code": 1,
+        "output_sha256": "bf5b40da5d87e98e4c014213351f738e362a4efd6d947addb7214be16934f640"
+      }
+    },
+    {
+      "name": "video-production-suite",
+      "slug": "video-production-suite",
+      "path_display": "<skill-corpus-1>/video-production-suite",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "8348ffff783be074d89a3d966dc4c97dbd659e8bb436bbc652ba9caa3e6ec92b",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/video-production-suite",
+        "exit_code": 1,
+        "output_sha256": "8348ffff783be074d89a3d966dc4c97dbd659e8bb436bbc652ba9caa3e6ec92b"
+      }
+    },
+    {
+      "name": "vision-proxy",
+      "slug": "vision-proxy",
+      "path_display": "<skill-corpus-2>/vision-proxy",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "6e1dea3a0eae0e1bdd5257b1f8beb73ef7bc5df5beebfc66c26163250a021b20",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/vision-proxy",
+        "exit_code": 1,
+        "output_sha256": "6e1dea3a0eae0e1bdd5257b1f8beb73ef7bc5df5beebfc66c26163250a021b20"
+      }
+    },
+    {
+      "name": "A/B测试分析",
+      "slug": "ab-test-analysis",
+      "path_display": "<skill-corpus-1>/ab-test-analysis",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": 10.5,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（10.5/11.5），UZI v2 由工具签出 L1; 未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "10c67ff54d0e1193a2fbeb788357dcec6974f637aeec2c61d7730fe97245d7d0",
+      "behaviour": [
+        {
+          "check_id": "B1",
+          "title": "golden task 端到端执行与判分",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B1 ./ab-test-analysis",
+          "exit_code": 2,
+          "output_sha256": "7081f3543866fc3321fbbe93c832eacfeb68bba883fd0b44255f7a84c42f8984",
+          "missing": "未执行 B1：缺 golden task 执行环境、模型调用记录与判分结果"
+        },
+        {
+          "check_id": "B2",
+          "title": "越界请求实际拒答/降级",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B2 ./ab-test-analysis",
+          "exit_code": 2,
+          "output_sha256": "53882aca590dc735cbcec832de019cd09f1b01e926207f6c7b68880f921c2c76",
+          "missing": "未执行 B2：本轮未向模型发送 3 条越界请求，无拒答录像"
+        },
+        {
+          "check_id": "B3",
+          "title": "同任务 3 次采样稳定性",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B3 ./ab-test-analysis",
+          "exit_code": 2,
+          "output_sha256": "01d15e694900819f6b8a0039d30de1902dfdfa78bf63c1ce9c74522f5748698a",
+          "missing": "未执行 B3：缺 3 次重复采样的通过率记录"
+        }
+      ],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/ab-test-analysis",
+        "exit_code": 1,
+        "output_sha256": "10c67ff54d0e1193a2fbeb788357dcec6974f637aeec2c61d7730fe97245d7d0"
+      }
+    },
+    {
+      "name": "agent-research",
+      "slug": "agent-research",
+      "path_display": "<skill-corpus-1>/agent-research",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L2",
+      "score": 83.33,
+      "passed": 5,
+      "applicable": 6,
+      "before": {
+        "score": 10.5,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "pass",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（10.5/11.5），UZI v2 由工具签出 L2; 未通过/无证据: M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "2b3a0ba45364f509f2d8c08d70f7dc4e0d94434eae91825063b955ea89ae3e32",
+      "behaviour": [
+        {
+          "check_id": "B1",
+          "title": "golden task 端到端执行与判分",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B1 ./agent-research",
+          "exit_code": 2,
+          "output_sha256": "7081f3543866fc3321fbbe93c832eacfeb68bba883fd0b44255f7a84c42f8984",
+          "missing": "未执行 B1：缺 golden task 执行环境、模型调用记录与判分结果"
+        },
+        {
+          "check_id": "B2",
+          "title": "越界请求实际拒答/降级",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B2 ./agent-research",
+          "exit_code": 2,
+          "output_sha256": "53882aca590dc735cbcec832de019cd09f1b01e926207f6c7b68880f921c2c76",
+          "missing": "未执行 B2：本轮未向模型发送 3 条越界请求，无拒答录像"
+        },
+        {
+          "check_id": "B3",
+          "title": "同任务 3 次采样稳定性",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B3 ./agent-research",
+          "exit_code": 2,
+          "output_sha256": "01d15e694900819f6b8a0039d30de1902dfdfa78bf63c1ce9c74522f5748698a",
+          "missing": "未执行 B3：缺 3 次重复采样的通过率记录"
+        }
+      ],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/agent-research",
+        "exit_code": 1,
+        "output_sha256": "2b3a0ba45364f509f2d8c08d70f7dc4e0d94434eae91825063b955ea89ae3e32"
+      }
+    },
+    {
+      "name": "认知决策框架",
+      "slug": "cognitive-decision-framework",
+      "path_display": "<skill-corpus-1>/cognitive-decision-framework",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L2",
+      "score": 83.33,
+      "passed": 5,
+      "applicable": 6,
+      "before": {
+        "score": 10.25,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "pass",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（10.25/11.5），UZI v2 由工具签出 L2; 未通过/无证据: M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "0ce18d98ed0b005c36d00102643330bc365039aa61cf85b4fd839fd57b0af4c8",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/cognitive-decision-framework",
+        "exit_code": 1,
+        "output_sha256": "0ce18d98ed0b005c36d00102643330bc365039aa61cf85b4fd839fd57b0af4c8"
+      }
+    },
+    {
+      "name": "队列分析",
+      "slug": "cohort-analysis",
+      "path_display": "<skill-corpus-1>/cohort-analysis",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": 10.5,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（10.5/11.5），UZI v2 由工具签出 L1; 未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "58d889d188a0cc9670618e7630e6121985e8eba1544d0f4fa20ce6569104d73e",
+      "behaviour": [
+        {
+          "check_id": "B1",
+          "title": "golden task 端到端执行与判分",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B1 ./cohort-analysis",
+          "exit_code": 2,
+          "output_sha256": "7081f3543866fc3321fbbe93c832eacfeb68bba883fd0b44255f7a84c42f8984",
+          "missing": "未执行 B1：缺 golden task 执行环境、模型调用记录与判分结果"
+        },
+        {
+          "check_id": "B2",
+          "title": "越界请求实际拒答/降级",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B2 ./cohort-analysis",
+          "exit_code": 2,
+          "output_sha256": "53882aca590dc735cbcec832de019cd09f1b01e926207f6c7b68880f921c2c76",
+          "missing": "未执行 B2：本轮未向模型发送 3 条越界请求，无拒答录像"
+        },
+        {
+          "check_id": "B3",
+          "title": "同任务 3 次采样稳定性",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B3 ./cohort-analysis",
+          "exit_code": 2,
+          "output_sha256": "01d15e694900819f6b8a0039d30de1902dfdfa78bf63c1ce9c74522f5748698a",
+          "missing": "未执行 B3：缺 3 次重复采样的通过率记录"
+        }
+      ],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/cohort-analysis",
+        "exit_code": 1,
+        "output_sha256": "58d889d188a0cc9670618e7630e6121985e8eba1544d0f4fa20ce6569104d73e"
+      }
+    },
+    {
+      "name": "creative-origin-engine",
+      "slug": "creative-origin-engine",
+      "path_display": "<skill-corpus-1>/creative-origin-engine",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "a26ff5890a23655818023f1e9c306119928f1073c1902f12974f2697688a16af",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/creative-origin-engine",
+        "exit_code": 1,
+        "output_sha256": "a26ff5890a23655818023f1e9c306119928f1073c1902f12974f2697688a16af"
+      }
+    },
+    {
+      "name": "enterprise-benchmarking",
+      "slug": "enterprise-benchmarking",
+      "path_display": "<skill-corpus-1>/enterprise-benchmarking",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 50.0,
+      "passed": 3,
+      "applicable": 6,
+      "before": {
+        "score": 10.5,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "fail"
+      },
+      "failed_checks": [
+        "M3",
+        "M7",
+        "M8"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（10.5/11.5），UZI v2 由工具签出 L1; 未通过/无证据: M3,M7,M8; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "e000cef2b35abdb7430209e86379f07351040ec187a72011f446c79812413f8c",
+      "behaviour": [
+        {
+          "check_id": "B1",
+          "title": "golden task 端到端执行与判分",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B1 ./enterprise-benchmarking",
+          "exit_code": 2,
+          "output_sha256": "7081f3543866fc3321fbbe93c832eacfeb68bba883fd0b44255f7a84c42f8984",
+          "missing": "未执行 B1：缺 golden task 执行环境、模型调用记录与判分结果"
+        },
+        {
+          "check_id": "B2",
+          "title": "越界请求实际拒答/降级",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B2 ./enterprise-benchmarking",
+          "exit_code": 2,
+          "output_sha256": "53882aca590dc735cbcec832de019cd09f1b01e926207f6c7b68880f921c2c76",
+          "missing": "未执行 B2：本轮未向模型发送 3 条越界请求，无拒答录像"
+        },
+        {
+          "check_id": "B3",
+          "title": "同任务 3 次采样稳定性",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B3 ./enterprise-benchmarking",
+          "exit_code": 2,
+          "output_sha256": "01d15e694900819f6b8a0039d30de1902dfdfa78bf63c1ce9c74522f5748698a",
+          "missing": "未执行 B3：缺 3 次重复采样的通过率记录"
+        }
+      ],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/enterprise-benchmarking",
+        "exit_code": 1,
+        "output_sha256": "e000cef2b35abdb7430209e86379f07351040ec187a72011f446c79812413f8c"
+      }
+    },
+    {
+      "name": "financial-bp-analysis",
+      "slug": "financial-bp-analysis",
+      "path_display": "<skill-corpus-1>/financial-bp-analysis",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 50.0,
+      "passed": 3,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "fail"
+      },
+      "failed_checks": [
+        "M3",
+        "M7",
+        "M8"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M3,M7,M8; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "3f492b5c654a6a580c7c123acf57064202fc4678414153ba762ee81378a1d883",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/financial-bp-analysis",
+        "exit_code": 1,
+        "output_sha256": "3f492b5c654a6a580c7c123acf57064202fc4678414153ba762ee81378a1d883"
+      }
+    },
+    {
+      "name": "第一性原理推理引擎",
+      "slug": "first-principles-reasoning",
+      "path_display": "<skill-corpus-1>/first-principles-reasoning",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L2",
+      "score": 83.33,
+      "passed": 5,
+      "applicable": 6,
+      "before": {
+        "score": 10.75,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "pass",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（10.75/11.5），UZI v2 由工具签出 L2; 未通过/无证据: M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "a8feaf30702bf8e12401553e0ea358c168252292b828c3305d53fdeae2461a2c",
+      "behaviour": [
+        {
+          "check_id": "B1",
+          "title": "golden task 端到端执行与判分",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B1 ./first-principles-reasoning",
+          "exit_code": 2,
+          "output_sha256": "7081f3543866fc3321fbbe93c832eacfeb68bba883fd0b44255f7a84c42f8984",
+          "missing": "未执行 B1：缺 golden task 执行环境、模型调用记录与判分结果"
+        },
+        {
+          "check_id": "B2",
+          "title": "越界请求实际拒答/降级",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B2 ./first-principles-reasoning",
+          "exit_code": 2,
+          "output_sha256": "53882aca590dc735cbcec832de019cd09f1b01e926207f6c7b68880f921c2c76",
+          "missing": "未执行 B2：本轮未向模型发送 3 条越界请求，无拒答录像"
+        },
+        {
+          "check_id": "B3",
+          "title": "同任务 3 次采样稳定性",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B3 ./first-principles-reasoning",
+          "exit_code": 2,
+          "output_sha256": "01d15e694900819f6b8a0039d30de1902dfdfa78bf63c1ce9c74522f5748698a",
+          "missing": "未执行 B3：缺 3 次重复采样的通过率记录"
+        }
+      ],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/first-principles-reasoning",
+        "exit_code": 1,
+        "output_sha256": "a8feaf30702bf8e12401553e0ea358c168252292b828c3305d53fdeae2461a2c"
+      }
+    },
+    {
+      "name": "统一框架编排器",
+      "slug": "framework-orchestrator",
+      "path_display": "<skill-corpus-1>/framework-orchestrator",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L2",
+      "score": 83.33,
+      "passed": 5,
+      "applicable": 6,
+      "before": {
+        "score": 10.25,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "pass",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（10.25/11.5），UZI v2 由工具签出 L2; 未通过/无证据: M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "290f6719cacf51417f941bacace0f10784917eb3fbc615d3495c48ec74252262",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/framework-orchestrator",
+        "exit_code": 1,
+        "output_sha256": "290f6719cacf51417f941bacace0f10784917eb3fbc615d3495c48ec74252262"
+      }
+    },
+    {
+      "name": "liurun-perspective",
+      "slug": "liurun-perspective",
+      "path_display": "<skill-corpus-1>/liurun-perspective",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 50.0,
+      "passed": 3,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "fail"
+      },
+      "failed_checks": [
+        "M3",
+        "M7",
+        "M8"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M3,M7,M8; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "f131f0e56bd44596a84c14a596711d73c2a07cc8f49acb42b6a3051904962e0b",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/liurun-perspective",
+        "exit_code": 1,
+        "output_sha256": "f131f0e56bd44596a84c14a596711d73c2a07cc8f49acb42b6a3051904962e0b"
+      }
+    },
+    {
+      "name": "methodology-decision",
+      "slug": "methodology-decision",
+      "path_display": "<skill-corpus-1>/methodology-decision",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L0",
+      "score": 50.0,
+      "passed": 3,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "fail",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M1",
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M1,M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "6b945d744aa826d6c3536a1ad3552f6106d11defa5f2df9dbfd11908cda8e95f",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/methodology-decision",
+        "exit_code": 1,
+        "output_sha256": "6b945d744aa826d6c3536a1ad3552f6106d11defa5f2df9dbfd11908cda8e95f"
+      }
+    },
+    {
+      "name": "错误→方法复盘",
+      "slug": "mistake-to-method",
+      "path_display": "<skill-corpus-1>/mistake-to-method",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L2",
+      "score": 83.33,
+      "passed": 5,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "pass",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "99368e17dafb63e25e0e852e44ddbecd6dbd09fdb78f3c4fa884332d533cd018",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/mistake-to-method",
+        "exit_code": 1,
+        "output_sha256": "99368e17dafb63e25e0e852e44ddbecd6dbd09fdb78f3c4fa884332d533cd018"
+      }
+    },
+    {
+      "name": "nuwa-skill",
+      "slug": "nuwa-skill",
+      "path_display": "<skill-corpus-1>/nuwa-skill",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "pass",
+        "M4": "fail",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M4",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M4,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "bd8a1173c0f7047c8ca96680e8abad2ea70d2484b176fbc271a55c95b359a2ce",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/nuwa-skill",
+        "exit_code": 1,
+        "output_sha256": "bd8a1173c0f7047c8ca96680e8abad2ea70d2484b176fbc271a55c95b359a2ce"
+      }
+    },
+    {
+      "name": "简历审查优化",
+      "slug": "review-resume",
+      "path_display": "<skill-corpus-1>/review-resume",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L2",
+      "score": 83.33,
+      "passed": 5,
+      "applicable": 6,
+      "before": {
+        "score": 10.5,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "pass",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（10.5/11.5），UZI v2 由工具签出 L2; 未通过/无证据: M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "0e9475f1636942562eec279c6a85d84bd99165e9d1711f558556d6daf4f56195",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/review-resume",
+        "exit_code": 1,
+        "output_sha256": "0e9475f1636942562eec279c6a85d84bd99165e9d1711f558556d6daf4f56195"
+      }
+    },
+    {
+      "name": "根因分析",
+      "slug": "root-cause-analysis",
+      "path_display": "<skill-corpus-1>/root-cause-analysis",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L2",
+      "score": 83.33,
+      "passed": 5,
+      "applicable": 6,
+      "before": {
+        "score": 10.5,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "pass",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（10.5/11.5），UZI v2 由工具签出 L2; 未通过/无证据: M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "5946afa3dccaabd669c122c3469842c001fc21cab52ed8c011a127a8fe2ca709",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/root-cause-analysis",
+        "exit_code": 1,
+        "output_sha256": "5946afa3dccaabd669c122c3469842c001fc21cab52ed8c011a127a8fe2ca709"
+      }
+    },
+    {
+      "name": "用户情感分析",
+      "slug": "sentiment-analysis",
+      "path_display": "<skill-corpus-1>/sentiment-analysis",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": 10.5,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（10.5/11.5），UZI v2 由工具签出 L1; 未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "02a7e159c95957d14cff04625dedbd4a126ce87ce37c7d2ae0d7ae578f34b0fd",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/sentiment-analysis",
+        "exit_code": 1,
+        "output_sha256": "02a7e159c95957d14cff04625dedbd4a126ce87ce37c7d2ae0d7ae578f34b0fd"
+      }
+    },
+    {
+      "name": "unified-inspiration",
+      "slug": "unified-inspiration",
+      "path_display": "<skill-corpus-1>/unified-inspiration",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "248b29fd8b0a04e791b9496731a4fc80be8df3dc389e1fa8219b94f81e9ecb61",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/unified-inspiration",
+        "exit_code": 1,
+        "output_sha256": "248b29fd8b0a04e791b9496731a4fc80be8df3dc389e1fa8219b94f81e9ecb61"
+      }
+    },
+    {
+      "name": "unified-risk-engine",
+      "slug": "unified-risk-engine",
+      "path_display": "<skill-corpus-1>/unified-risk-engine",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "1f3f3bb104931986092f59fd71a33259bae2a819d116e8b052fac666c395bf49",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/unified-risk-engine",
+        "exit_code": 1,
+        "output_sha256": "1f3f3bb104931986092f59fd71a33259bae2a819d116e8b052fac666c395bf49"
+      }
+    },
+    {
+      "name": "weread-skills",
+      "slug": "weread-skills",
+      "path_display": "<skill-corpus-1>/weread-skills",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L0",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "fail",
+        "M2": "pass",
+        "M3": "pass",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M1",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M1,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "ae1e524faab2c4e0dce60e499f096c9fcfe3d463450ed90e08eff4770824ddf7",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/weread-skills",
+        "exit_code": 1,
+        "output_sha256": "ae1e524faab2c4e0dce60e499f096c9fcfe3d463450ed90e08eff4770824ddf7"
+      }
+    },
+    {
+      "name": "audit-analyst-cross-validation",
+      "slug": "audit-analyst-cross-validation",
+      "path_display": "<skill-corpus-1>/audit-analyst-cross-validation",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "6e0cc1fafb4a71e8572bd60118e93f062fb41fa0dcee647a6a7b7200bf1c761c",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/audit-analyst-cross-validation",
+        "exit_code": 1,
+        "output_sha256": "6e0cc1fafb4a71e8572bd60118e93f062fb41fa0dcee647a6a7b7200bf1c761c"
+      }
+    },
+    {
+      "name": "audit-engineer-agent",
+      "slug": "audit-engineer-agent",
+      "path_display": "<skill-corpus-1>/audit-engineer-agent",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L2",
+      "score": 83.33,
+      "passed": 5,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "pass",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "cc619ead9163e4f0cb4a2e15f3ac48b303ab1a8a003facdbb63a4716ee8e2b05",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/audit-engineer-agent",
+        "exit_code": 1,
+        "output_sha256": "cc619ead9163e4f0cb4a2e15f3ac48b303ab1a8a003facdbb63a4716ee8e2b05"
+      }
+    },
+    {
+      "name": "合同风险扫描",
+      "slug": "contract-risk-scanner",
+      "path_display": "<skill-corpus-1>/contract-risk-scanner",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L2",
+      "score": 83.33,
+      "passed": 5,
+      "applicable": 6,
+      "before": {
+        "score": 10.5,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "pass",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（10.5/11.5），UZI v2 由工具签出 L2; 未通过/无证据: M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "32d3d40acb3830d9803e7cfefe8ad66f1ee0cacff096ef74139bb3cb9c00d87b",
+      "behaviour": [
+        {
+          "check_id": "B1",
+          "title": "golden task 端到端执行与判分",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B1 ./contract-risk-scanner",
+          "exit_code": 2,
+          "output_sha256": "7081f3543866fc3321fbbe93c832eacfeb68bba883fd0b44255f7a84c42f8984",
+          "missing": "未执行 B1：缺 golden task 执行环境、模型调用记录与判分结果"
+        },
+        {
+          "check_id": "B2",
+          "title": "越界请求实际拒答/降级",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B2 ./contract-risk-scanner",
+          "exit_code": 2,
+          "output_sha256": "53882aca590dc735cbcec832de019cd09f1b01e926207f6c7b68880f921c2c76",
+          "missing": "未执行 B2：本轮未向模型发送 3 条越界请求，无拒答录像"
+        },
+        {
+          "check_id": "B3",
+          "title": "同任务 3 次采样稳定性",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B3 ./contract-risk-scanner",
+          "exit_code": 2,
+          "output_sha256": "01d15e694900819f6b8a0039d30de1902dfdfa78bf63c1ce9c74522f5748698a",
+          "missing": "未执行 B3：缺 3 次重复采样的通过率记录"
+        }
+      ],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/contract-risk-scanner",
+        "exit_code": 1,
+        "output_sha256": "32d3d40acb3830d9803e7cfefe8ad66f1ee0cacff096ef74139bb3cb9c00d87b"
+      }
+    },
+    {
+      "name": "成本效益分析",
+      "slug": "cost-benefit-analysis",
+      "path_display": "<skill-corpus-1>/cost-benefit-analysis",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 50.0,
+      "passed": 3,
+      "applicable": 6,
+      "before": {
+        "score": 10.25,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "fail"
+      },
+      "failed_checks": [
+        "M3",
+        "M7",
+        "M8"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（10.25/11.5），UZI v2 由工具签出 L1; 未通过/无证据: M3,M7,M8; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "922cc201afec759d2dc7bb2b5e57322371cc3bf6b661767b84ab9ae4a226b41b",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/cost-benefit-analysis",
+        "exit_code": 1,
+        "output_sha256": "922cc201afec759d2dc7bb2b5e57322371cc3bf6b661767b84ab9ae4a226b41b"
+      }
+    },
+    {
+      "name": "data-report-builder",
+      "slug": "data-report-builder",
+      "path_display": "<skill-corpus-1>/data-report-builder",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "2db9be0cc36dd10885cf78eed564089d75827f1e57b854a42628aed3d101bdb8",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/data-report-builder",
+        "exit_code": 1,
+        "output_sha256": "2db9be0cc36dd10885cf78eed564089d75827f1e57b854a42628aed3d101bdb8"
+      }
+    },
+    {
+      "name": "保密协议起草",
+      "slug": "draft-nda",
+      "path_display": "<skill-corpus-1>/draft-nda",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L2",
+      "score": 83.33,
+      "passed": 5,
+      "applicable": 6,
+      "before": {
+        "score": 10.5,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "pass",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（10.5/11.5），UZI v2 由工具签出 L2; 未通过/无证据: M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "018ec39e8a78611a84dd092b6f7d064c6525f28d6e94331199f817d38fd312d2",
+      "behaviour": [
+        {
+          "check_id": "B1",
+          "title": "golden task 端到端执行与判分",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B1 ./draft-nda",
+          "exit_code": 2,
+          "output_sha256": "7081f3543866fc3321fbbe93c832eacfeb68bba883fd0b44255f7a84c42f8984",
+          "missing": "未执行 B1：缺 golden task 执行环境、模型调用记录与判分结果"
+        },
+        {
+          "check_id": "B2",
+          "title": "越界请求实际拒答/降级",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B2 ./draft-nda",
+          "exit_code": 2,
+          "output_sha256": "53882aca590dc735cbcec832de019cd09f1b01e926207f6c7b68880f921c2c76",
+          "missing": "未执行 B2：本轮未向模型发送 3 条越界请求，无拒答录像"
+        },
+        {
+          "check_id": "B3",
+          "title": "同任务 3 次采样稳定性",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B3 ./draft-nda",
+          "exit_code": 2,
+          "output_sha256": "01d15e694900819f6b8a0039d30de1902dfdfa78bf63c1ce9c74522f5748698a",
+          "missing": "未执行 B3：缺 3 次重复采样的通过率记录"
+        }
+      ],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/draft-nda",
+        "exit_code": 1,
+        "output_sha256": "018ec39e8a78611a84dd092b6f7d064c6525f28d6e94331199f817d38fd312d2"
+      }
+    },
+    {
+      "name": "equity-transfer-statement",
+      "slug": "equity-transfer-statement",
+      "path_display": "<skill-corpus-1>/equity-transfer-statement",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L2",
+      "score": 83.33,
+      "passed": 5,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "pass",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "fec066666fd9cb788437e66a1ccb1db2dad6962e56f4fb487cdd9ded82b11ed1",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/equity-transfer-statement",
+        "exit_code": 1,
+        "output_sha256": "fec066666fd9cb788437e66a1ccb1db2dad6962e56f4fb487cdd9ded82b11ed1"
+      }
+    },
+    {
+      "name": "financial-data-access",
+      "slug": "financial-data-access",
+      "path_display": "<skill-corpus-1>/financial-data-access",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": 10.5,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（10.5/11.5），UZI v2 由工具签出 L1; 未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "ed4253c4133bf0e5dec13b6eb48a8f91631bd52766d4774ab4e25d87b7c2ab67",
+      "behaviour": [
+        {
+          "check_id": "B1",
+          "title": "golden task 端到端执行与判分",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B1 ./financial-data-access",
+          "exit_code": 2,
+          "output_sha256": "7081f3543866fc3321fbbe93c832eacfeb68bba883fd0b44255f7a84c42f8984",
+          "missing": "未执行 B1：缺 golden task 执行环境、模型调用记录与判分结果"
+        },
+        {
+          "check_id": "B2",
+          "title": "越界请求实际拒答/降级",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B2 ./financial-data-access",
+          "exit_code": 2,
+          "output_sha256": "53882aca590dc735cbcec832de019cd09f1b01e926207f6c7b68880f921c2c76",
+          "missing": "未执行 B2：本轮未向模型发送 3 条越界请求，无拒答录像"
+        },
+        {
+          "check_id": "B3",
+          "title": "同任务 3 次采样稳定性",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B3 ./financial-data-access",
+          "exit_code": 2,
+          "output_sha256": "01d15e694900819f6b8a0039d30de1902dfdfa78bf63c1ce9c74522f5748698a",
+          "missing": "未执行 B3：缺 3 次重复采样的通过率记录"
+        }
+      ],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/financial-data-access",
+        "exit_code": 1,
+        "output_sha256": "ed4253c4133bf0e5dec13b6eb48a8f91631bd52766d4774ab4e25d87b7c2ab67"
+      }
+    },
+    {
+      "name": "财务报表分析",
+      "slug": "financial-statement-analysis",
+      "path_display": "<skill-corpus-1>/financial-statement-analysis",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L2",
+      "score": 83.33,
+      "passed": 5,
+      "applicable": 6,
+      "before": {
+        "score": 10.5,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "pass",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（10.5/11.5），UZI v2 由工具签出 L2; 未通过/无证据: M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "1e64b75971b30c9dca4144008c94271ab2df53c627b2cc99c317c742c648b30d",
+      "behaviour": [
+        {
+          "check_id": "B1",
+          "title": "golden task 端到端执行与判分",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B1 ./financial-statement-analysis",
+          "exit_code": 2,
+          "output_sha256": "7081f3543866fc3321fbbe93c832eacfeb68bba883fd0b44255f7a84c42f8984",
+          "missing": "未执行 B1：缺 golden task 执行环境、模型调用记录与判分结果"
+        },
+        {
+          "check_id": "B2",
+          "title": "越界请求实际拒答/降级",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B2 ./financial-statement-analysis",
+          "exit_code": 2,
+          "output_sha256": "53882aca590dc735cbcec832de019cd09f1b01e926207f6c7b68880f921c2c76",
+          "missing": "未执行 B2：本轮未向模型发送 3 条越界请求，无拒答录像"
+        },
+        {
+          "check_id": "B3",
+          "title": "同任务 3 次采样稳定性",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B3 ./financial-statement-analysis",
+          "exit_code": 2,
+          "output_sha256": "01d15e694900819f6b8a0039d30de1902dfdfa78bf63c1ce9c74522f5748698a",
+          "missing": "未执行 B3：缺 3 次重复采样的通过率记录"
+        }
+      ],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/financial-statement-analysis",
+        "exit_code": 1,
+        "output_sha256": "1e64b75971b30c9dca4144008c94271ab2df53c627b2cc99c317c742c648b30d"
+      }
+    },
+    {
+      "name": "行业分析助手",
+      "slug": "industry-analysis-assistant",
+      "path_display": "<skill-corpus-1>/industry-analysis-assistant",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": 11.0,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（11.0/11.5），UZI v2 由工具签出 L1; 未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "5230ae179e1164fbe237e68ea784b7b275b6143a7adc3fa6b742be05d9b13235",
+      "behaviour": [
+        {
+          "check_id": "B1",
+          "title": "golden task 端到端执行与判分",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B1 ./industry-analysis-assistant",
+          "exit_code": 2,
+          "output_sha256": "7081f3543866fc3321fbbe93c832eacfeb68bba883fd0b44255f7a84c42f8984",
+          "missing": "未执行 B1：缺 golden task 执行环境、模型调用记录与判分结果"
+        },
+        {
+          "check_id": "B2",
+          "title": "越界请求实际拒答/降级",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B2 ./industry-analysis-assistant",
+          "exit_code": 2,
+          "output_sha256": "53882aca590dc735cbcec832de019cd09f1b01e926207f6c7b68880f921c2c76",
+          "missing": "未执行 B2：本轮未向模型发送 3 条越界请求，无拒答录像"
+        },
+        {
+          "check_id": "B3",
+          "title": "同任务 3 次采样稳定性",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B3 ./industry-analysis-assistant",
+          "exit_code": 2,
+          "output_sha256": "01d15e694900819f6b8a0039d30de1902dfdfa78bf63c1ce9c74522f5748698a",
+          "missing": "未执行 B3：缺 3 次重复采样的通过率记录"
+        }
+      ],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/industry-analysis-assistant",
+        "exit_code": 1,
+        "output_sha256": "5230ae179e1164fbe237e68ea784b7b275b6143a7adc3fa6b742be05d9b13235"
+      }
+    },
+    {
+      "name": "内部控制评估",
+      "slug": "internal-control-assessment",
+      "path_display": "<skill-corpus-1>/internal-control-assessment",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": 10.5,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（10.5/11.5），UZI v2 由工具签出 L1; 未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "d244a9ba449aac851cfdeb9a57eeeec629fb0ccf58e9bdc9511d6a2eb7b3dc5f",
+      "behaviour": [
+        {
+          "check_id": "B1",
+          "title": "golden task 端到端执行与判分",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B1 ./internal-control-assessment",
+          "exit_code": 2,
+          "output_sha256": "7081f3543866fc3321fbbe93c832eacfeb68bba883fd0b44255f7a84c42f8984",
+          "missing": "未执行 B1：缺 golden task 执行环境、模型调用记录与判分结果"
+        },
+        {
+          "check_id": "B2",
+          "title": "越界请求实际拒答/降级",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B2 ./internal-control-assessment",
+          "exit_code": 2,
+          "output_sha256": "53882aca590dc735cbcec832de019cd09f1b01e926207f6c7b68880f921c2c76",
+          "missing": "未执行 B2：本轮未向模型发送 3 条越界请求，无拒答录像"
+        },
+        {
+          "check_id": "B3",
+          "title": "同任务 3 次采样稳定性",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B3 ./internal-control-assessment",
+          "exit_code": 2,
+          "output_sha256": "01d15e694900819f6b8a0039d30de1902dfdfa78bf63c1ce9c74522f5748698a",
+          "missing": "未执行 B3：缺 3 次重复采样的通过率记录"
+        }
+      ],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/internal-control-assessment",
+        "exit_code": 1,
+        "output_sha256": "d244a9ba449aac851cfdeb9a57eeeec629fb0ccf58e9bdc9511d6a2eb7b3dc5f"
+      }
+    },
+    {
+      "name": "investment-risk-engine",
+      "slug": "investment-risk-engine",
+      "path_display": "<skill-corpus-1>/investment-risk-engine",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": 10.5,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（10.5/11.5），UZI v2 由工具签出 L1; 未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "8012314ea1d1a7a6b471bd2b227e981fc0f0094ed244ba30f56c4a542792e276",
+      "behaviour": [
+        {
+          "check_id": "B1",
+          "title": "golden task 端到端执行与判分",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B1 ./investment-risk-engine",
+          "exit_code": 2,
+          "output_sha256": "7081f3543866fc3321fbbe93c832eacfeb68bba883fd0b44255f7a84c42f8984",
+          "missing": "未执行 B1：缺 golden task 执行环境、模型调用记录与判分结果"
+        },
+        {
+          "check_id": "B2",
+          "title": "越界请求实际拒答/降级",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B2 ./investment-risk-engine",
+          "exit_code": 2,
+          "output_sha256": "53882aca590dc735cbcec832de019cd09f1b01e926207f6c7b68880f921c2c76",
+          "missing": "未执行 B2：本轮未向模型发送 3 条越界请求，无拒答录像"
+        },
+        {
+          "check_id": "B3",
+          "title": "同任务 3 次采样稳定性",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B3 ./investment-risk-engine",
+          "exit_code": 2,
+          "output_sha256": "01d15e694900819f6b8a0039d30de1902dfdfa78bf63c1ce9c74522f5748698a",
+          "missing": "未执行 B3：缺 3 次重复采样的通过率记录"
+        }
+      ],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/investment-risk-engine",
+        "exit_code": 1,
+        "output_sha256": "8012314ea1d1a7a6b471bd2b227e981fc0f0094ed244ba30f56c4a542792e276"
+      }
+    },
+    {
+      "name": "management-advisory",
+      "slug": "management-advisory",
+      "path_display": "<skill-corpus-1>/management-advisory",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "c12adab28d2b44c36a811ef1699bed5a7297163673fbf821673d127d0b71673d",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/management-advisory",
+        "exit_code": 1,
+        "output_sha256": "c12adab28d2b44c36a811ef1699bed5a7297163673fbf821673d127d0b71673d"
+      }
+    },
+    {
+      "name": "隐私政策起草",
+      "slug": "privacy-policy",
+      "path_display": "<skill-corpus-1>/privacy-policy",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": 10.5,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（10.5/11.5），UZI v2 由工具签出 L1; 未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "3d77ebcc770bff1ee8a19390d3ffefd7f6af7a99f1c713f9f537d8afde0face7",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/privacy-policy",
+        "exit_code": 1,
+        "output_sha256": "3d77ebcc770bff1ee8a19390d3ffefd7f6af7a99f1c713f9f537d8afde0face7"
+      }
+    },
+    {
+      "name": "shiyanwen-financial-advisor",
+      "slug": "shiyanwen-financial-advisor",
+      "path_display": "<skill-corpus-2>/shiyanwen-financial-advisor",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L0",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "fail",
+        "M3": "pass",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M2",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M2,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "5f65f0633a94155da07b0c9a97b557c64742cc7ea85cbfbb7479245eb1d361c9",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/shiyanwen-financial-advisor",
+        "exit_code": 1,
+        "output_sha256": "5f65f0633a94155da07b0c9a97b557c64742cc7ea85cbfbb7479245eb1d361c9"
+      }
+    },
+    {
+      "name": "sp-replacement-eval",
+      "slug": "sp-replacement-eval",
+      "path_display": "<skill-corpus-1>/sp-replacement-eval",
+      "alias_of": null,
+      "tier": "exec",
+      "level": "L0",
+      "score": 37.5,
+      "passed": 3,
+      "applicable": 8,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "fail",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "fail",
+        "M6": "unverifiable",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M2",
+        "M3",
+        "M5",
+        "M6",
+        "M7"
+      ],
+      "unverifiable": {
+        "M6": "tests/expected.json（含 argv 与期望 stdout 的 sha256）"
+      },
+      "downgrade_reason": "未通过/无证据: M2,M3,M5,M6,M7",
+      "digest": "2fd13df5aab00b02c540f309ec95a902d15b0f3a7ab33854589e2addd1eb27c6",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/sp-replacement-eval",
+        "exit_code": 1,
+        "output_sha256": "2fd13df5aab00b02c540f309ec95a902d15b0f3a7ab33854589e2addd1eb27c6"
+      }
+    },
+    {
+      "name": "supply-chain-collaboration",
+      "slug": "supply-chain-collaboration",
+      "path_display": "<skill-corpus-1>/supply-chain-collaboration",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L0",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "fail",
+        "M2": "pass",
+        "M3": "pass",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M1",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M1,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "4f7d4e16e027dc4cc2e3201bd06222da585c4db53661a31822627ccfc953333b",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/supply-chain-collaboration",
+        "exit_code": 1,
+        "output_sha256": "4f7d4e16e027dc4cc2e3201bd06222da585c4db53661a31822627ccfc953333b"
+      }
+    },
+    {
+      "name": "税务风险预警",
+      "slug": "tax-risk-indicators",
+      "path_display": "<skill-corpus-1>/tax-risk-indicators",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": 9.75,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（9.75/11.5），UZI v2 由工具签出 L1; 未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "7819dde1fbd6252e4cdaba0e12f2afdbad3fad2f0676326c228c0debf394c09f",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/tax-risk-indicators",
+        "exit_code": 1,
+        "output_sha256": "7819dde1fbd6252e4cdaba0e12f2afdbad3fad2f0676326c228c0debf394c09f"
+      }
+    },
+    {
+      "name": "商业模式画布",
+      "slug": "canvas-strategy",
+      "path_display": "<skill-corpus-1>/canvas-strategy",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": 10.5,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（10.5/11.5），UZI v2 由工具签出 L1; 未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "b9e985d95ed77e3d3b48cf2fff766ab8a82f69d59cb846da8f018667b91b5b20",
+      "behaviour": [
+        {
+          "check_id": "B1",
+          "title": "golden task 端到端执行与判分",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B1 ./canvas-strategy",
+          "exit_code": 2,
+          "output_sha256": "7081f3543866fc3321fbbe93c832eacfeb68bba883fd0b44255f7a84c42f8984",
+          "missing": "未执行 B1：缺 golden task 执行环境、模型调用记录与判分结果"
+        },
+        {
+          "check_id": "B2",
+          "title": "越界请求实际拒答/降级",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B2 ./canvas-strategy",
+          "exit_code": 2,
+          "output_sha256": "53882aca590dc735cbcec832de019cd09f1b01e926207f6c7b68880f921c2c76",
+          "missing": "未执行 B2：本轮未向模型发送 3 条越界请求，无拒答录像"
+        },
+        {
+          "check_id": "B3",
+          "title": "同任务 3 次采样稳定性",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B3 ./canvas-strategy",
+          "exit_code": 2,
+          "output_sha256": "01d15e694900819f6b8a0039d30de1902dfdfa78bf63c1ce9c74522f5748698a",
+          "missing": "未执行 B3：缺 3 次重复采样的通过率记录"
+        }
+      ],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/canvas-strategy",
+        "exit_code": 1,
+        "output_sha256": "b9e985d95ed77e3d3b48cf2fff766ab8a82f69d59cb846da8f018667b91b5b20"
+      }
+    },
+    {
+      "name": "construction-reconciliation",
+      "slug": "construction-reconciliation",
+      "path_display": "<skill-corpus-1>/construction-reconciliation",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "e864435615033ac4054b4d46296984172836d9ddb2b437a507de93ed6ed95667",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/construction-reconciliation",
+        "exit_code": 1,
+        "output_sha256": "e864435615033ac4054b4d46296984172836d9ddb2b437a507de93ed6ed95667"
+      }
+    },
+    {
+      "name": "PRD需求文档生成",
+      "slug": "create-prd",
+      "path_display": "<skill-corpus-1>/create-prd",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L2",
+      "score": 83.33,
+      "passed": 5,
+      "applicable": 6,
+      "before": {
+        "score": 10.5,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "pass",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（10.5/11.5），UZI v2 由工具签出 L2; 未通过/无证据: M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "d5012c79ea7ebdc7ca025f3027a5e6858c9f2c837925530ef720939e235e2ec9",
+      "behaviour": [
+        {
+          "check_id": "B1",
+          "title": "golden task 端到端执行与判分",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B1 ./create-prd",
+          "exit_code": 2,
+          "output_sha256": "7081f3543866fc3321fbbe93c832eacfeb68bba883fd0b44255f7a84c42f8984",
+          "missing": "未执行 B1：缺 golden task 执行环境、模型调用记录与判分结果"
+        },
+        {
+          "check_id": "B2",
+          "title": "越界请求实际拒答/降级",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B2 ./create-prd",
+          "exit_code": 2,
+          "output_sha256": "53882aca590dc735cbcec832de019cd09f1b01e926207f6c7b68880f921c2c76",
+          "missing": "未执行 B2：本轮未向模型发送 3 条越界请求，无拒答录像"
+        },
+        {
+          "check_id": "B3",
+          "title": "同任务 3 次采样稳定性",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B3 ./create-prd",
+          "exit_code": 2,
+          "output_sha256": "01d15e694900819f6b8a0039d30de1902dfdfa78bf63c1ce9c74522f5748698a",
+          "missing": "未执行 B3：缺 3 次重复采样的通过率记录"
+        }
+      ],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/create-prd",
+        "exit_code": 1,
+        "output_sha256": "d5012c79ea7ebdc7ca025f3027a5e6858c9f2c837925530ef720939e235e2ec9"
+      }
+    },
+    {
+      "name": "客户旅程地图",
+      "slug": "customer-journey-map",
+      "path_display": "<skill-corpus-1>/customer-journey-map",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": 9.5,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（9.5/11.5），UZI v2 由工具签出 L1; 未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "a2e0bb6516d7cc462d9836950242dfbdfb49422b09ec76d655f2288957a6cfbc",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/customer-journey-map",
+        "exit_code": 1,
+        "output_sha256": "a2e0bb6516d7cc462d9836950242dfbdfb49422b09ec76d655f2288957a6cfbc"
+      }
+    },
+    {
+      "name": "literary-quality-standards",
+      "slug": "literary-quality-standards",
+      "path_display": "<skill-corpus-1>/literary-quality-standards",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "1ac3ede34ca9769323a2521a5647201e3627758204721ae10375f62d506db922",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/literary-quality-standards",
+        "exit_code": 1,
+        "output_sha256": "1ac3ede34ca9769323a2521a5647201e3627758204721ae10375f62d506db922"
+      }
+    },
+    {
+      "name": "liurun-fengtang-advisor",
+      "slug": "liurun-fengtang-advisor",
+      "path_display": "<skill-corpus-2>/liurun-fengtang-advisor",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L0",
+      "score": 50.0,
+      "passed": 3,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "fail",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M2",
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M2,M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "99940f0a4d21d07f8d94e74109ac40cde4177d618d64b6804a840085357597e7",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/liurun-fengtang-advisor",
+        "exit_code": 1,
+        "output_sha256": "99940f0a4d21d07f8d94e74109ac40cde4177d618d64b6804a840085357597e7"
+      }
+    },
+    {
+      "name": "market-competitive-intelligence",
+      "slug": "market-competitive-intelligence",
+      "path_display": "<skill-corpus-1>/market-competitive-intelligence",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L0",
+      "score": 50.0,
+      "passed": 3,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "fail",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M1",
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M1,M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "61597700a76f6b9a1778ae53a7e9f41972ec9911a344544ab3594dc226b01afd",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/market-competitive-intelligence",
+        "exit_code": 1,
+        "output_sha256": "61597700a76f6b9a1778ae53a7e9f41972ec9911a344544ab3594dc226b01afd"
+      }
+    },
+    {
+      "name": "成熟度模型评估",
+      "slug": "maturity-model-assessment",
+      "path_display": "<skill-corpus-1>/maturity-model-assessment",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L0",
+      "score": 50.0,
+      "passed": 3,
+      "applicable": 6,
+      "before": {
+        "score": 10.5,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "fail",
+        "M2": "pass",
+        "M3": "pass",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "unverifiable"
+      },
+      "failed_checks": [
+        "M1",
+        "M7",
+        "M8"
+      ],
+      "unverifiable": {
+        "M8": "命名来源无法独立打开/核验，缺 URL 或 references/文件锚点: 1.2% @ > 中国企业平均 LRC™ = 55.2 分，70 分以上仅 1.2% — 参考冠卓咨询 2026 白皮书"
+      },
+      "downgrade_reason": "旧体系标 GOLD（10.5/11.5），UZI v2 由工具签出 L0; 未通过/无证据: M1,M7,M8; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "6bbb40ac5bee94bce9d63c33e20eb44f0cb0dea126032e2f024a0c30974703e6",
+      "behaviour": [
+        {
+          "check_id": "B1",
+          "title": "golden task 端到端执行与判分",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B1 ./maturity-model-assessment",
+          "exit_code": 2,
+          "output_sha256": "7081f3543866fc3321fbbe93c832eacfeb68bba883fd0b44255f7a84c42f8984",
+          "missing": "未执行 B1：缺 golden task 执行环境、模型调用记录与判分结果"
+        },
+        {
+          "check_id": "B2",
+          "title": "越界请求实际拒答/降级",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B2 ./maturity-model-assessment",
+          "exit_code": 2,
+          "output_sha256": "53882aca590dc735cbcec832de019cd09f1b01e926207f6c7b68880f921c2c76",
+          "missing": "未执行 B2：本轮未向模型发送 3 条越界请求，无拒答录像"
+        },
+        {
+          "check_id": "B3",
+          "title": "同任务 3 次采样稳定性",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B3 ./maturity-model-assessment",
+          "exit_code": 2,
+          "output_sha256": "01d15e694900819f6b8a0039d30de1902dfdfa78bf63c1ce9c74522f5748698a",
+          "missing": "未执行 B3：缺 3 次重复采样的通过率记录"
+        }
+      ],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/maturity-model-assessment",
+        "exit_code": 1,
+        "output_sha256": "6bbb40ac5bee94bce9d63c33e20eb44f0cb0dea126032e2f024a0c30974703e6"
+      }
+    },
+    {
+      "name": "优先级排序",
+      "slug": "prioritization",
+      "path_display": "<skill-corpus-1>/prioritization",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": 10.5,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（10.5/11.5），UZI v2 由工具签出 L1; 未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "2e2f972ab3cb1afe983fe7e67eca3d97c7dba71dd312bdb9d971d15b425881f7",
+      "behaviour": [
+        {
+          "check_id": "B1",
+          "title": "golden task 端到端执行与判分",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B1 ./prioritization",
+          "exit_code": 2,
+          "output_sha256": "7081f3543866fc3321fbbe93c832eacfeb68bba883fd0b44255f7a84c42f8984",
+          "missing": "未执行 B1：缺 golden task 执行环境、模型调用记录与判分结果"
+        },
+        {
+          "check_id": "B2",
+          "title": "越界请求实际拒答/降级",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B2 ./prioritization",
+          "exit_code": 2,
+          "output_sha256": "53882aca590dc735cbcec832de019cd09f1b01e926207f6c7b68880f921c2c76",
+          "missing": "未执行 B2：本轮未向模型发送 3 条越界请求，无拒答录像"
+        },
+        {
+          "check_id": "B3",
+          "title": "同任务 3 次采样稳定性",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B3 ./prioritization",
+          "exit_code": 2,
+          "output_sha256": "01d15e694900819f6b8a0039d30de1902dfdfa78bf63c1ce9c74522f5748698a",
+          "missing": "未执行 B3：缺 3 次重复采样的通过率记录"
+        }
+      ],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/prioritization",
+        "exit_code": 1,
+        "output_sha256": "2e2f972ab3cb1afe983fe7e67eca3d97c7dba71dd312bdb9d971d15b425881f7"
+      }
+    },
+    {
+      "name": "product-design-analyzer",
+      "slug": "product-design-analyzer",
+      "path_display": "<skill-corpus-2>/product-design-analyzer",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 50.0,
+      "passed": 3,
+      "applicable": 6,
+      "before": {
+        "score": 10.75,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "fail",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M4",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（10.75/11.5），UZI v2 由工具签出 L1; 未通过/无证据: M3,M4,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "bd0ff7589054ccb4ad6c02c22019d439932998d9d83f75951d1e336201e066c3",
+      "behaviour": [
+        {
+          "check_id": "B1",
+          "title": "golden task 端到端执行与判分",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B1 ./product-design-analyzer",
+          "exit_code": 2,
+          "output_sha256": "7081f3543866fc3321fbbe93c832eacfeb68bba883fd0b44255f7a84c42f8984",
+          "missing": "未执行 B1：缺 golden task 执行环境、模型调用记录与判分结果"
+        },
+        {
+          "check_id": "B2",
+          "title": "越界请求实际拒答/降级",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B2 ./product-design-analyzer",
+          "exit_code": 2,
+          "output_sha256": "53882aca590dc735cbcec832de019cd09f1b01e926207f6c7b68880f921c2c76",
+          "missing": "未执行 B2：本轮未向模型发送 3 条越界请求，无拒答录像"
+        },
+        {
+          "check_id": "B3",
+          "title": "同任务 3 次采样稳定性",
+          "kind": "behaviour",
+          "status": "unverifiable",
+          "executed": false,
+          "command": "uzi behaviour B3 ./product-design-analyzer",
+          "exit_code": 2,
+          "output_sha256": "01d15e694900819f6b8a0039d30de1902dfdfa78bf63c1ce9c74522f5748698a",
+          "missing": "未执行 B3：缺 3 次重复采样的通过率记录"
+        }
+      ],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/product-design-analyzer",
+        "exit_code": 1,
+        "output_sha256": "bd0ff7589054ccb4ad6c02c22019d439932998d9d83f75951d1e336201e066c3"
+      }
+    },
+    {
+      "name": "产品创意构思",
+      "slug": "product-ideation",
+      "path_display": "<skill-corpus-1>/product-ideation",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": 9.5,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（9.5/11.5），UZI v2 由工具签出 L1; 未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "2a1066b8b32c15d5fa1865ab1b50ba3a8db8048674ecde1f7c81cfb6ce7f1b40",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/product-ideation",
+        "exit_code": 1,
+        "output_sha256": "2a1066b8b32c15d5fa1865ab1b50ba3a8db8048674ecde1f7c81cfb6ce7f1b40"
+      }
+    },
+    {
+      "name": "public-account-writing",
+      "slug": "public-account-writing",
+      "path_display": "<skill-corpus-1>/public-account-writing",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L2",
+      "score": 83.33,
+      "passed": 5,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "pass",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "178e61991864116e104bee83c2b8bd2f3f33a3e43241c7ae0d416b1973f29899",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/public-account-writing",
+        "exit_code": 1,
+        "output_sha256": "178e61991864116e104bee83c2b8bd2f3f33a3e43241c7ae0d416b1973f29899"
+      }
+    },
+    {
+      "name": "用户故事编写",
+      "slug": "story-writing",
+      "path_display": "<skill-corpus-1>/story-writing",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": 10.5,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（10.5/11.5），UZI v2 由工具签出 L1; 未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "036790dc93670bb95f213d96c774edf9a1c05621ae09cd03c0cdf6ec3f6e02ee",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/story-writing",
+        "exit_code": 1,
+        "output_sha256": "036790dc93670bb95f213d96c774edf9a1c05621ae09cd03c0cdf6ec3f6e02ee"
+      }
+    },
+    {
+      "name": "unified-strategy",
+      "slug": "unified-strategy",
+      "path_display": "<skill-corpus-1>/unified-strategy",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L0",
+      "score": 50.0,
+      "passed": 3,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "fail",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M1",
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M1,M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "b2dc594deb558ee9604ec26247ae2e17374d058cb15367a5975002399a04486f",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/unified-strategy",
+        "exit_code": 1,
+        "output_sha256": "b2dc594deb558ee9604ec26247ae2e17374d058cb15367a5975002399a04486f"
+      }
+    },
+    {
+      "name": "用户画像",
+      "slug": "user-personas",
+      "path_display": "<skill-corpus-1>/user-personas",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": 10.5,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（10.5/11.5），UZI v2 由工具签出 L1; 未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "ab219cb95a12a59bed76442ca5b40f5530f7045fb3b161b911b5f9742bb8e734",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/user-personas",
+        "exit_code": 1,
+        "output_sha256": "ab219cb95a12a59bed76442ca5b40f5530f7045fb3b161b911b5f9742bb8e734"
+      }
+    },
+    {
+      "name": "anti-ai-writing",
+      "slug": "anti-ai-writing",
+      "path_display": "<skill-corpus-1>/anti-ai-writing",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "0e8e9ad45d1d7b25654be7f071e4e1e7f436cd0e6f7abc246f09326a7a7e66e1",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/anti-ai-writing",
+        "exit_code": 1,
+        "output_sha256": "0e8e9ad45d1d7b25654be7f071e4e1e7f436cd0e6f7abc246f09326a7a7e66e1"
+      }
+    },
+    {
+      "name": "cangjie-skill",
+      "slug": "cangjie-skill",
+      "path_display": "<skill-corpus-1>/cangjie-skill",
+      "alias_of": null,
+      "tier": "exec",
+      "level": "L1",
+      "score": 62.5,
+      "passed": 5,
+      "applicable": 8,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "pass",
+        "M4": "pass",
+        "M5": "fail",
+        "M6": "unverifiable",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M5",
+        "M6",
+        "M7"
+      ],
+      "unverifiable": {
+        "M6": "tests/expected.json（含 argv 与期望 stdout 的 sha256）"
+      },
+      "downgrade_reason": "未通过/无证据: M5,M6,M7",
+      "digest": "890f3f9ac0711d6ae18cca7bacdebb343e13990e02c547a493353a0161a4fa11",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/cangjie-skill",
+        "exit_code": 1,
+        "output_sha256": "890f3f9ac0711d6ae18cca7bacdebb343e13990e02c547a493353a0161a4fa11"
+      }
+    },
+    {
+      "name": "cinematic-video-generator",
+      "slug": "cinematic-video-generator",
+      "path_display": "<skill-corpus-1>/cinematic-video-generator",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "ea354a593ceccac0d3e914880b98f31ff152b396911c82da2835d2d2ca84d9e7",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/cinematic-video-generator",
+        "exit_code": 1,
+        "output_sha256": "ea354a593ceccac0d3e914880b98f31ff152b396911c82da2835d2d2ca84d9e7"
+      }
+    },
+    {
+      "name": "novel-serial-writing",
+      "slug": "novel-serial-writing",
+      "path_display": "<skill-corpus-1>/novel-serial-writing",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "e1241e08ab22407de38f2eed080025e07d83994e55a36379b2ea01716ca18c92",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/novel-serial-writing",
+        "exit_code": 1,
+        "output_sha256": "e1241e08ab22407de38f2eed080025e07d83994e55a36379b2ea01716ca18c92"
+      }
+    },
+    {
+      "name": "Remotion最佳实践",
+      "slug": "remotion-best-practices",
+      "path_display": "<skill-corpus-1>/remotion-best-practices",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L0",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": 9.75,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "fail",
+        "M2": "pass",
+        "M3": "pass",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M1",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（9.75/11.5），UZI v2 由工具签出 L0; 未通过/无证据: M1,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "3a7203721517c47a1063d623218206cf687221a7da62eedd8c95fd58c3d27118",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/remotion-best-practices",
+        "exit_code": 1,
+        "output_sha256": "3a7203721517c47a1063d623218206cf687221a7da62eedd8c95fd58c3d27118"
+      }
+    },
+    {
+      "name": "response-craftsmanship",
+      "slug": "response-craftsmanship",
+      "path_display": "<skill-corpus-1>/response-craftsmanship",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "68ba17aef1303f7faf4b37c12f25fc891548a3c6324975e6a13519449ed34557",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/response-craftsmanship",
+        "exit_code": 1,
+        "output_sha256": "68ba17aef1303f7faf4b37c12f25fc891548a3c6324975e6a13519449ed34557"
+      }
+    },
+    {
+      "name": "series-history-writing",
+      "slug": "series-history-writing",
+      "path_display": "<skill-corpus-1>/series-history-writing",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L1",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "6a4f427ed94e48d0295c5d5e6d3601f1068831d9a7f6f6859f294a8427ff07d9",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/series-history-writing",
+        "exit_code": 1,
+        "output_sha256": "6a4f427ed94e48d0295c5d5e6d3601f1068831d9a7f6f6859f294a8427ff07d9"
+      }
+    },
+    {
+      "name": "unified-storyboard",
+      "slug": "unified-storyboard",
+      "path_display": "<skill-corpus-1>/unified-storyboard",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L0",
+      "score": 50.0,
+      "passed": 3,
+      "applicable": 6,
+      "before": {
+        "score": null,
+        "status": "旧报告未收录"
+      },
+      "checks": {
+        "M1": "fail",
+        "M2": "pass",
+        "M3": "fail",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M1",
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M1,M3,M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "e6528c94b0e76c5c5c2380f14882420173f7a2f263fc7542d44d1e825f078294",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/unified-storyboard",
+        "exit_code": 1,
+        "output_sha256": "e6528c94b0e76c5c5c2380f14882420173f7a2f263fc7542d44d1e825f078294"
+      }
+    },
+    {
+      "name": "video-understanding",
+      "slug": "video-understanding",
+      "path_display": "<skill-corpus-1>/video-understanding",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L2",
+      "score": 83.33,
+      "passed": 5,
+      "applicable": 6,
+      "before": {
+        "score": 10.5,
+        "status": "🟢 GOLD"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "pass",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "旧体系标 GOLD（10.5/11.5），UZI v2 由工具签出 L2; 未通过/无证据: M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "3a4b976f4873b39708c66531434895ed43f1a4eef8281b6b78d73d5a91c2d50e",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/video-understanding",
+        "exit_code": 1,
+        "output_sha256": "3a4b976f4873b39708c66531434895ed43f1a4eef8281b6b78d73d5a91c2d50e"
+      }
+    },
+    {
+      "name": "课程作业生成器",
+      "slug": "course-assignment-generator",
+      "path_display": "<skill-corpus-1>/course-assignment-generator",
+      "alias_of": null,
+      "tier": "prose",
+      "level": "L2",
+      "score": 83.33,
+      "passed": 5,
+      "applicable": 6,
+      "before": {
+        "score": 9.75,
+        "status": "already_gold"
+      },
+      "checks": {
+        "M1": "pass",
+        "M2": "pass",
+        "M3": "pass",
+        "M4": "pass",
+        "M5": "skip",
+        "M6": "skip",
+        "M7": "fail",
+        "M8": "pass"
+      },
+      "failed_checks": [
+        "M7"
+      ],
+      "unverifiable": {},
+      "downgrade_reason": "未通过/无证据: M7; prose 档无 scripts/tests，M5/M6 不适用，最高可达 L2（可复现需可执行证据）",
+      "digest": "a19a68046acb6daafdb526025b09434c3f82bf7f8832c12171d33b56c71be7df",
+      "behaviour": [],
+      "evidence": {
+        "command": "uzi grade <skill-corpus>/course-assignment-generator",
+        "exit_code": 1,
+        "output_sha256": "a19a68046acb6daafdb526025b09434c3f82bf7f8832c12171d33b56c71be7df"
+      }
+    }
+  ],
+  "regrade_sha256": "b8e1b4c41155444adc3ffe80e3ec51e43ef9c54ec09e1948402b42576d081ff8"
+}

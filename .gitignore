@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+uzi-report/
+uzi-report*/
+*.svg
+!docs/**/*.svg
+.DS_Store

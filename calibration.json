@@ -1,0 +1,922 @@
+{
+  "schema": "uzi-grade/calibration/1",
+  "tool_schema": "uzi-grade/1",
+  "tool_version": "1.0.0",
+  "percentile_method": "linear interpolation between closest ranks (R type 7)",
+  "roots": [
+    {
+      "root": "<HOME>/.claude/plugins/marketplaces/claude-plugins-official",
+      "label": "claude-plugins-official",
+      "exists": true,
+      "scanned": 33
+    },
+    {
+      "root": "<HOME>/.codex/skills/.system",
+      "label": ".system",
+      "exists": true,
+      "scanned": 5
+    }
+  ],
+  "scanned": 38,
+  "errors": [],
+  "tiers": {
+    "exec": {
+      "skills": 5,
+      "score": {
+        "n": 5,
+        "min": 12.5,
+        "p25": 37.5,
+        "p50": 50.0,
+        "p75": 50.0,
+        "max": 62.5,
+        "mean": 42.5
+      },
+      "levels": {
+        "L0": 5,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "L5": 0
+      }
+    },
+    "prose": {
+      "skills": 33,
+      "score": {
+        "n": 33,
+        "min": 33.33,
+        "p25": 50.0,
+        "p50": 50.0,
+        "p75": 66.67,
+        "max": 66.67,
+        "mean": 54.04
+      },
+      "levels": {
+        "L0": 33,
+        "L1": 0,
+        "L2": 0,
+        "L3": 0,
+        "L4": 0,
+        "L5": 0
+      }
+    }
+  },
+  "overall": {
+    "n": 38,
+    "min": 12.5,
+    "p25": 50.0,
+    "p50": 50.0,
+    "p75": 66.67,
+    "max": 66.67,
+    "mean": 52.52
+  },
+  "skills": [
+    {
+      "skill": "access",
+      "slug": "access",
+      "source": "claude-plugins-official",
+      "tier": "prose",
+      "level": "L0",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "digest": "8f817f73207042c181cfc9fce65aa50fbebbe5ced0996145e272967568c7d585",
+      "evidence": {
+        "command": "uzi grade access",
+        "exit_code": 1,
+        "output_sha256": "8f817f73207042c181cfc9fce65aa50fbebbe5ced0996145e272967568c7d585"
+      },
+      "failed_checks": [
+        "M2",
+        "M7"
+      ],
+      "unverifiable": {}
+    },
+    {
+      "skill": "configure",
+      "slug": "configure",
+      "source": "claude-plugins-official",
+      "tier": "prose",
+      "level": "L0",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "digest": "0717e36b58b2046f29a7b20ce649cbd50829277229be1d55ab7011d3e9fda158",
+      "evidence": {
+        "command": "uzi grade configure",
+        "exit_code": 1,
+        "output_sha256": "0717e36b58b2046f29a7b20ce649cbd50829277229be1d55ab7011d3e9fda158"
+      },
+      "failed_checks": [
+        "M2",
+        "M7"
+      ],
+      "unverifiable": {}
+    },
+    {
+      "skill": "access",
+      "slug": "access",
+      "source": "claude-plugins-official",
+      "tier": "prose",
+      "level": "L0",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "digest": "47e6d48b3df7af6299e9c9cda4a9ebbe0ae54e3e8772a59a3fd142f31dfffb72",
+      "evidence": {
+        "command": "uzi grade access",
+        "exit_code": 1,
+        "output_sha256": "47e6d48b3df7af6299e9c9cda4a9ebbe0ae54e3e8772a59a3fd142f31dfffb72"
+      },
+      "failed_checks": [
+        "M2",
+        "M7"
+      ],
+      "unverifiable": {}
+    },
+    {
+      "skill": "configure",
+      "slug": "configure",
+      "source": "claude-plugins-official",
+      "tier": "prose",
+      "level": "L0",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "digest": "415d750764d922ad12f820253898f7c3fdf25660dc47f04671a98b59cc097674",
+      "evidence": {
+        "command": "uzi grade configure",
+        "exit_code": 1,
+        "output_sha256": "415d750764d922ad12f820253898f7c3fdf25660dc47f04671a98b59cc097674"
+      },
+      "failed_checks": [
+        "M2",
+        "M7"
+      ],
+      "unverifiable": {}
+    },
+    {
+      "skill": "access",
+      "slug": "access",
+      "source": "claude-plugins-official",
+      "tier": "prose",
+      "level": "L0",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "digest": "a038e85e6070858cd07af9aa1f5bff57319bc68c9c34410ab58e5e9b81b911f8",
+      "evidence": {
+        "command": "uzi grade access",
+        "exit_code": 1,
+        "output_sha256": "a038e85e6070858cd07af9aa1f5bff57319bc68c9c34410ab58e5e9b81b911f8"
+      },
+      "failed_checks": [
+        "M2",
+        "M7"
+      ],
+      "unverifiable": {}
+    },
+    {
+      "skill": "configure",
+      "slug": "configure",
+      "source": "claude-plugins-official",
+      "tier": "prose",
+      "level": "L0",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "digest": "180d1a0265680aa27f7a0e020f624f0ee6fb175b3ce51094bcaa69d08fab1f03",
+      "evidence": {
+        "command": "uzi grade configure",
+        "exit_code": 1,
+        "output_sha256": "180d1a0265680aa27f7a0e020f624f0ee6fb175b3ce51094bcaa69d08fab1f03"
+      },
+      "failed_checks": [
+        "M2",
+        "M7"
+      ],
+      "unverifiable": {}
+    },
+    {
+      "skill": "claude-automation-recommender",
+      "slug": "claude-automation-recommender",
+      "source": "claude-plugins-official",
+      "tier": "prose",
+      "level": "L0",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "digest": "7af67b28c9bd5d0af5d4e44587459d133eabe801e110993bef223110bf137413",
+      "evidence": {
+        "command": "uzi grade claude-automation-recommender",
+        "exit_code": 1,
+        "output_sha256": "7af67b28c9bd5d0af5d4e44587459d133eabe801e110993bef223110bf137413"
+      },
+      "failed_checks": [
+        "M2",
+        "M7"
+      ],
+      "unverifiable": {}
+    },
+    {
+      "skill": "claude-md-improver",
+      "slug": "claude-md-improver",
+      "source": "claude-plugins-official",
+      "tier": "prose",
+      "level": "L0",
+      "score": 50.0,
+      "passed": 3,
+      "applicable": 6,
+      "digest": "471c38ee620c4ccf2e43dd361c205343326ecf487f127975c927620c493a776f",
+      "evidence": {
+        "command": "uzi grade claude-md-improver",
+        "exit_code": 1,
+        "output_sha256": "471c38ee620c4ccf2e43dd361c205343326ecf487f127975c927620c493a776f"
+      },
+      "failed_checks": [
+        "M2",
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {}
+    },
+    {
+      "skill": "claude-security",
+      "slug": "claude-security",
+      "source": "claude-plugins-official",
+      "tier": "prose",
+      "level": "L0",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "digest": "7f175a6660f8bc3f292d1379aec48c7f45b85358fe29cbe5f73f13b167393a55",
+      "evidence": {
+        "command": "uzi grade claude-security",
+        "exit_code": 1,
+        "output_sha256": "7f175a6660f8bc3f292d1379aec48c7f45b85358fe29cbe5f73f13b167393a55"
+      },
+      "failed_checks": [
+        "M2",
+        "M7"
+      ],
+      "unverifiable": {}
+    },
+    {
+      "skill": "cardputer-buddy",
+      "slug": "cardputer-buddy",
+      "source": "claude-plugins-official",
+      "tier": "prose",
+      "level": "L0",
+      "score": 50.0,
+      "passed": 3,
+      "applicable": 6,
+      "digest": "85e11ac7b6cf8edd9b6b730b22f01ef25398791fd98a8f2b7d208044e0948cd3",
+      "evidence": {
+        "command": "uzi grade cardputer-buddy",
+        "exit_code": 1,
+        "output_sha256": "85e11ac7b6cf8edd9b6b730b22f01ef25398791fd98a8f2b7d208044e0948cd3"
+      },
+      "failed_checks": [
+        "M2",
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {}
+    },
+    {
+      "skill": "m5-onboard",
+      "slug": "m5-onboard",
+      "source": "claude-plugins-official",
+      "tier": "prose",
+      "level": "L0",
+      "score": 33.33,
+      "passed": 2,
+      "applicable": 6,
+      "digest": "75e9b3a2effdce3fa3de813ffb351433a56ef03e74c3fb6a798151d43620b67d",
+      "evidence": {
+        "command": "uzi grade m5-onboard",
+        "exit_code": 1,
+        "output_sha256": "75e9b3a2effdce3fa3de813ffb351433a56ef03e74c3fb6a798151d43620b67d"
+      },
+      "failed_checks": [
+        "M2",
+        "M3",
+        "M4",
+        "M7"
+      ],
+      "unverifiable": {}
+    },
+    {
+      "skill": "example-command",
+      "slug": "example-command",
+      "source": "claude-plugins-official",
+      "tier": "prose",
+      "level": "L0",
+      "score": 33.33,
+      "passed": 2,
+      "applicable": 6,
+      "digest": "e9e081c60f42bb7c915d95784b8794b01f56187e37a0001efe36adae00e5c33d",
+      "evidence": {
+        "command": "uzi grade example-command",
+        "exit_code": 1,
+        "output_sha256": "e9e081c60f42bb7c915d95784b8794b01f56187e37a0001efe36adae00e5c33d"
+      },
+      "failed_checks": [
+        "M1",
+        "M2",
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {}
+    },
+    {
+      "skill": "example-skill",
+      "slug": "example-skill",
+      "source": "claude-plugins-official",
+      "tier": "prose",
+      "level": "L0",
+      "score": 50.0,
+      "passed": 3,
+      "applicable": 6,
+      "digest": "fc7320dcdf05c9b153d212c33da807a0fcf5ae9f75d957f254e8a69ac23e3ab1",
+      "evidence": {
+        "command": "uzi grade example-skill",
+        "exit_code": 1,
+        "output_sha256": "fc7320dcdf05c9b153d212c33da807a0fcf5ae9f75d957f254e8a69ac23e3ab1"
+      },
+      "failed_checks": [
+        "M2",
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {}
+    },
+    {
+      "skill": "frontend-design",
+      "slug": "frontend-design",
+      "source": "claude-plugins-official",
+      "tier": "prose",
+      "level": "L0",
+      "score": 33.33,
+      "passed": 2,
+      "applicable": 6,
+      "digest": "c6d955f4dfba5a7a040850619ce53d1fd317dd8e46060e2d4a091b02d7a44f13",
+      "evidence": {
+        "command": "uzi grade frontend-design",
+        "exit_code": 1,
+        "output_sha256": "c6d955f4dfba5a7a040850619ce53d1fd317dd8e46060e2d4a091b02d7a44f13"
+      },
+      "failed_checks": [
+        "M1",
+        "M2",
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {}
+    },
+    {
+      "skill": "writing-rules",
+      "slug": "writing-rules",
+      "source": "claude-plugins-official",
+      "tier": "prose",
+      "level": "L0",
+      "score": 33.33,
+      "passed": 2,
+      "applicable": 6,
+      "digest": "0f09ff57733a75f681036a6aa8a11598921aa63991e4064e0cec94974dcf8ca1",
+      "evidence": {
+        "command": "uzi grade writing-rules",
+        "exit_code": 1,
+        "output_sha256": "0f09ff57733a75f681036a6aa8a11598921aa63991e4064e0cec94974dcf8ca1"
+      },
+      "failed_checks": [
+        "M1",
+        "M2",
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {}
+    },
+    {
+      "skill": "math-olympiad",
+      "slug": "math-olympiad",
+      "source": "claude-plugins-official",
+      "tier": "prose",
+      "level": "L0",
+      "score": 50.0,
+      "passed": 3,
+      "applicable": 6,
+      "digest": "1d6dc02dd8db3dd61f9b1a01db38c1c3191107d87ccfd96e57769f0e7efd2530",
+      "evidence": {
+        "command": "uzi grade math-olympiad",
+        "exit_code": 1,
+        "output_sha256": "1d6dc02dd8db3dd61f9b1a01db38c1c3191107d87ccfd96e57769f0e7efd2530"
+      },
+      "failed_checks": [
+        "M1",
+        "M2",
+        "M7"
+      ],
+      "unverifiable": {}
+    },
+    {
+      "skill": "siege",
+      "slug": "siege",
+      "source": "claude-plugins-official",
+      "tier": "exec",
+      "level": "L0",
+      "score": 37.5,
+      "passed": 3,
+      "applicable": 8,
+      "digest": "30d023f4977e0027b7ccb2d3eebb91dccc6a29b732c270e71266ad00512bcbc5",
+      "evidence": {
+        "command": "uzi grade siege",
+        "exit_code": 1,
+        "output_sha256": "30d023f4977e0027b7ccb2d3eebb91dccc6a29b732c270e71266ad00512bcbc5"
+      },
+      "failed_checks": [
+        "M1",
+        "M2",
+        "M3",
+        "M6",
+        "M7"
+      ],
+      "unverifiable": {
+        "M6": "tests/expected.json（含 argv 与期望 stdout 的 sha256）"
+      }
+    },
+    {
+      "skill": "solo",
+      "slug": "solo",
+      "source": "claude-plugins-official",
+      "tier": "prose",
+      "level": "L0",
+      "score": 33.33,
+      "passed": 2,
+      "applicable": 6,
+      "digest": "f876518228f11bb1e71a3d8317cab4e48511e76a887e3c578e7bae658ed73875",
+      "evidence": {
+        "command": "uzi grade solo",
+        "exit_code": 1,
+        "output_sha256": "f876518228f11bb1e71a3d8317cab4e48511e76a887e3c578e7bae658ed73875"
+      },
+      "failed_checks": [
+        "M1",
+        "M2",
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {}
+    },
+    {
+      "skill": "build-mcp-app",
+      "slug": "build-mcp-app",
+      "source": "claude-plugins-official",
+      "tier": "prose",
+      "level": "L0",
+      "score": 50.0,
+      "passed": 3,
+      "applicable": 6,
+      "digest": "d5e7aa93f24357bfeb3c29d77210df8db7e995294e2ba1ac4d96f32502d05270",
+      "evidence": {
+        "command": "uzi grade build-mcp-app",
+        "exit_code": 1,
+        "output_sha256": "d5e7aa93f24357bfeb3c29d77210df8db7e995294e2ba1ac4d96f32502d05270"
+      },
+      "failed_checks": [
+        "M2",
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {}
+    },
+    {
+      "skill": "build-mcp-server",
+      "slug": "build-mcp-server",
+      "source": "claude-plugins-official",
+      "tier": "prose",
+      "level": "L0",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "digest": "937167fb3d68aa3d6851361d5c043525f7372904e18336e88305a90b92e702ae",
+      "evidence": {
+        "command": "uzi grade build-mcp-server",
+        "exit_code": 1,
+        "output_sha256": "937167fb3d68aa3d6851361d5c043525f7372904e18336e88305a90b92e702ae"
+      },
+      "failed_checks": [
+        "M2",
+        "M7"
+      ],
+      "unverifiable": {}
+    },
+    {
+      "skill": "build-mcpb",
+      "slug": "build-mcpb",
+      "source": "claude-plugins-official",
+      "tier": "prose",
+      "level": "L0",
+      "score": 50.0,
+      "passed": 3,
+      "applicable": 6,
+      "digest": "287573e63f7f90862fe1edf00f8d7ee6dc96ca8398b500435c1e156258ec05bf",
+      "evidence": {
+        "command": "uzi grade build-mcpb",
+        "exit_code": 1,
+        "output_sha256": "287573e63f7f90862fe1edf00f8d7ee6dc96ca8398b500435c1e156258ec05bf"
+      },
+      "failed_checks": [
+        "M2",
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {}
+    },
+    {
+      "skill": "playground",
+      "slug": "playground",
+      "source": "claude-plugins-official",
+      "tier": "prose",
+      "level": "L0",
+      "score": 50.0,
+      "passed": 3,
+      "applicable": 6,
+      "digest": "258df7967c340585eb0e4c465fc4dc322df307ce3920c87f287aa4d138158c4f",
+      "evidence": {
+        "command": "uzi grade playground",
+        "exit_code": 1,
+        "output_sha256": "258df7967c340585eb0e4c465fc4dc322df307ce3920c87f287aa4d138158c4f"
+      },
+      "failed_checks": [
+        "M2",
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {}
+    },
+    {
+      "skill": "agent-development",
+      "slug": "agent-development",
+      "source": "claude-plugins-official",
+      "tier": "prose",
+      "level": "L0",
+      "score": 50.0,
+      "passed": 3,
+      "applicable": 6,
+      "digest": "8602f169f626da3023dd53ec21afc28fc8154df18255e6da35b191cfbd6fe9a3",
+      "evidence": {
+        "command": "uzi grade agent-development",
+        "exit_code": 1,
+        "output_sha256": "8602f169f626da3023dd53ec21afc28fc8154df18255e6da35b191cfbd6fe9a3"
+      },
+      "failed_checks": [
+        "M2",
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {}
+    },
+    {
+      "skill": "command-development",
+      "slug": "command-development",
+      "source": "claude-plugins-official",
+      "tier": "prose",
+      "level": "L0",
+      "score": 50.0,
+      "passed": 3,
+      "applicable": 6,
+      "digest": "9cf257c79188f154d57378bb20202e07e72632266dd37133107f14c3714798a8",
+      "evidence": {
+        "command": "uzi grade command-development",
+        "exit_code": 1,
+        "output_sha256": "9cf257c79188f154d57378bb20202e07e72632266dd37133107f14c3714798a8"
+      },
+      "failed_checks": [
+        "M2",
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {}
+    },
+    {
+      "skill": "hook-development",
+      "slug": "hook-development",
+      "source": "claude-plugins-official",
+      "tier": "prose",
+      "level": "L0",
+      "score": 50.0,
+      "passed": 3,
+      "applicable": 6,
+      "digest": "9e5ee9e980e562c39c5a76dde99bb8ee8a0e37d16f032739835f5f275ac59117",
+      "evidence": {
+        "command": "uzi grade hook-development",
+        "exit_code": 1,
+        "output_sha256": "9e5ee9e980e562c39c5a76dde99bb8ee8a0e37d16f032739835f5f275ac59117"
+      },
+      "failed_checks": [
+        "M2",
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {}
+    },
+    {
+      "skill": "mcp-integration",
+      "slug": "mcp-integration",
+      "source": "claude-plugins-official",
+      "tier": "prose",
+      "level": "L0",
+      "score": 50.0,
+      "passed": 3,
+      "applicable": 6,
+      "digest": "b2ac9a862ea54b5b46e6457577b7a7f68bce4c8105bfdcbe79a352a724e69bf5",
+      "evidence": {
+        "command": "uzi grade mcp-integration",
+        "exit_code": 1,
+        "output_sha256": "b2ac9a862ea54b5b46e6457577b7a7f68bce4c8105bfdcbe79a352a724e69bf5"
+      },
+      "failed_checks": [
+        "M2",
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {}
+    },
+    {
+      "skill": "plugin-settings",
+      "slug": "plugin-settings",
+      "source": "claude-plugins-official",
+      "tier": "prose",
+      "level": "L0",
+      "score": 50.0,
+      "passed": 3,
+      "applicable": 6,
+      "digest": "d4b33439dcb7f8ad95c19f8414be92d0be04788640aa7c79364a82659e5bb776",
+      "evidence": {
+        "command": "uzi grade plugin-settings",
+        "exit_code": 1,
+        "output_sha256": "d4b33439dcb7f8ad95c19f8414be92d0be04788640aa7c79364a82659e5bb776"
+      },
+      "failed_checks": [
+        "M2",
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {}
+    },
+    {
+      "skill": "plugin-structure",
+      "slug": "plugin-structure",
+      "source": "claude-plugins-official",
+      "tier": "prose",
+      "level": "L0",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "digest": "05ef3df47eb7820bcad2075bb21a676cebe3618fde41d1f79e3a5e290730ae3a",
+      "evidence": {
+        "command": "uzi grade plugin-structure",
+        "exit_code": 1,
+        "output_sha256": "05ef3df47eb7820bcad2075bb21a676cebe3618fde41d1f79e3a5e290730ae3a"
+      },
+      "failed_checks": [
+        "M2",
+        "M7"
+      ],
+      "unverifiable": {}
+    },
+    {
+      "skill": "skill-development",
+      "slug": "skill-development",
+      "source": "claude-plugins-official",
+      "tier": "prose",
+      "level": "L0",
+      "score": 50.0,
+      "passed": 3,
+      "applicable": 6,
+      "digest": "db100579cf363a6db4b8b9f876d0a5d760b2621f4850419cb448767259d00042",
+      "evidence": {
+        "command": "uzi grade skill-development",
+        "exit_code": 1,
+        "output_sha256": "db100579cf363a6db4b8b9f876d0a5d760b2621f4850419cb448767259d00042"
+      },
+      "failed_checks": [
+        "M2",
+        "M4",
+        "M7"
+      ],
+      "unverifiable": {}
+    },
+    {
+      "skill": "project-artifact",
+      "slug": "project-artifact",
+      "source": "claude-plugins-official",
+      "tier": "prose",
+      "level": "L0",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "digest": "7f4db35f9ab4294b9db6327f538f1d10655ed35437ff16eb962b55a6f292d224",
+      "evidence": {
+        "command": "uzi grade project-artifact",
+        "exit_code": 1,
+        "output_sha256": "7f4db35f9ab4294b9db6327f538f1d10655ed35437ff16eb962b55a6f292d224"
+      },
+      "failed_checks": [
+        "M2",
+        "M7"
+      ],
+      "unverifiable": {}
+    },
+    {
+      "skill": "receipts",
+      "slug": "receipts",
+      "source": "claude-plugins-official",
+      "tier": "prose",
+      "level": "L0",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "digest": "ece6f577f3998091a87741499e0128947f29e60bc4e7c3220b18b3eb4ee7eb9c",
+      "evidence": {
+        "command": "uzi grade receipts",
+        "exit_code": 1,
+        "output_sha256": "ece6f577f3998091a87741499e0128947f29e60bc4e7c3220b18b3eb4ee7eb9c"
+      },
+      "failed_checks": [
+        "M2",
+        "M7"
+      ],
+      "unverifiable": {}
+    },
+    {
+      "skill": "session-report",
+      "slug": "session-report",
+      "source": "claude-plugins-official",
+      "tier": "prose",
+      "level": "L0",
+      "score": 50.0,
+      "passed": 3,
+      "applicable": 6,
+      "digest": "c55e046ebe89dc2d31eafad2ebe0a0a0b67a5c5d3eadfdabc7d6f6d89a8bf3b1",
+      "evidence": {
+        "command": "uzi grade session-report",
+        "exit_code": 1,
+        "output_sha256": "c55e046ebe89dc2d31eafad2ebe0a0a0b67a5c5d3eadfdabc7d6f6d89a8bf3b1"
+      },
+      "failed_checks": [
+        "M1",
+        "M2",
+        "M7"
+      ],
+      "unverifiable": {}
+    },
+    {
+      "skill": "skill-creator",
+      "slug": "skill-creator",
+      "source": "claude-plugins-official",
+      "tier": "exec",
+      "level": "L0",
+      "score": 50.0,
+      "passed": 4,
+      "applicable": 8,
+      "digest": "abdc1d963a8506ef6fe7483e3b98287a91a38cc5b2149033cd5587af58d756ec",
+      "evidence": {
+        "command": "uzi grade skill-creator",
+        "exit_code": 1,
+        "output_sha256": "abdc1d963a8506ef6fe7483e3b98287a91a38cc5b2149033cd5587af58d756ec"
+      },
+      "failed_checks": [
+        "M2",
+        "M5",
+        "M6",
+        "M7"
+      ],
+      "unverifiable": {
+        "M6": "tests/expected.json（含 argv 与期望 stdout 的 sha256）"
+      }
+    },
+    {
+      "skill": "imagegen",
+      "slug": "imagegen",
+      "source": ".system",
+      "tier": "exec",
+      "level": "L0",
+      "score": 62.5,
+      "passed": 5,
+      "applicable": 8,
+      "digest": "4dca97a58264ce0faa8c5f22c3bc816ce8e83e03d9e180d93f541fb456857f10",
+      "evidence": {
+        "command": "uzi grade imagegen",
+        "exit_code": 1,
+        "output_sha256": "4dca97a58264ce0faa8c5f22c3bc816ce8e83e03d9e180d93f541fb456857f10"
+      },
+      "failed_checks": [
+        "M2",
+        "M6",
+        "M7"
+      ],
+      "unverifiable": {
+        "M6": "tests/expected.json（含 argv 与期望 stdout 的 sha256）"
+      }
+    },
+    {
+      "skill": "openai-docs",
+      "slug": "openai-docs",
+      "source": ".system",
+      "tier": "prose",
+      "level": "L0",
+      "score": 50.0,
+      "passed": 3,
+      "applicable": 6,
+      "digest": "24ca62a71409dc09dcf3aa080ac55b53abd8787e60afc6835f1c3b6153995c16",
+      "evidence": {
+        "command": "uzi grade openai-docs",
+        "exit_code": 1,
+        "output_sha256": "24ca62a71409dc09dcf3aa080ac55b53abd8787e60afc6835f1c3b6153995c16"
+      },
+      "failed_checks": [
+        "M2",
+        "M3",
+        "M7"
+      ],
+      "unverifiable": {}
+    },
+    {
+      "skill": "review-agent",
+      "slug": "review-agent",
+      "source": ".system",
+      "tier": "prose",
+      "level": "L0",
+      "score": 66.67,
+      "passed": 4,
+      "applicable": 6,
+      "digest": "cde862a2effa09cd69e6f086828b412caab61f6d2ba9f174168a82ded6ac7572",
+      "evidence": {
+        "command": "uzi grade review-agent",
+        "exit_code": 1,
+        "output_sha256": "cde862a2effa09cd69e6f086828b412caab61f6d2ba9f174168a82ded6ac7572"
+      },
+      "failed_checks": [
+        "M2",
+        "M7"
+      ],
+      "unverifiable": {}
+    },
+    {
+      "skill": "skill-creator",
+      "slug": "skill-creator",
+      "source": ".system",
+      "tier": "exec",
+      "level": "L0",
+      "score": 12.5,
+      "passed": 1,
+      "applicable": 8,
+      "digest": "01f4e6ec848338faba982df295e55db4c9413ccf5203215651dba136a81fda35",
+      "evidence": {
+        "command": "uzi grade skill-creator",
+        "exit_code": 1,
+        "output_sha256": "01f4e6ec848338faba982df295e55db4c9413ccf5203215651dba136a81fda35"
+      },
+      "failed_checks": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6",
+        "M7"
+      ],
+      "unverifiable": {
+        "M6": "tests/expected.json（含 argv 与期望 stdout 的 sha256）"
+      }
+    },
+    {
+      "skill": "skill-installer",
+      "slug": "skill-installer",
+      "source": ".system",
+      "tier": "exec",
+      "level": "L0",
+      "score": 50.0,
+      "passed": 4,
+      "applicable": 8,
+      "digest": "a2505344328149c282cde8f97c15c9cf1bdd227aac1678f330ba370ff75d3890",
+      "evidence": {
+        "command": "uzi grade skill-installer",
+        "exit_code": 1,
+        "output_sha256": "a2505344328149c282cde8f97c15c9cf1bdd227aac1678f330ba370ff75d3890"
+      },
+      "failed_checks": [
+        "M2",
+        "M3",
+        "M6",
+        "M7"
+      ],
+      "unverifiable": {
+        "M6": "tests/expected.json（含 argv 与期望 stdout 的 sha256）"
+      }
+    }
+  ],
+  "calibration_sha256": "cbbff98890ac9d2f274cf1c4b967518756f948564e1f60412379567e1b447a57"
+}

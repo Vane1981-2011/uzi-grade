@@ -1,0 +1,9 @@
+[
+  {
+    "argv": [
+      "python",
+      "scripts/report.py"
+    ],
+    "stdout_sha256": "58a1206300b23e1aba2d6e8c8e0289125eff9260f21bd70c8ae0fe4dfde82efd"
+  }
+]
